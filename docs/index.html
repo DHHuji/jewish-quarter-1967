@@ -64,6 +64,12 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
 .block .bh .x{margin-right:auto;cursor:pointer;color:var(--ink2);font-weight:400;font-size:12px}
 .block .legend-img{max-height:90px;margin:4px auto 6px}
 .leaflet-control-attribution{font-size:9px}
+.leaflet-control-scan{direction:rtl}
+.leaflet-bar.leaflet-control-scan a{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 10px;background:#fff;color:#333;text-decoration:none;font-size:13px;line-height:30px;white-space:nowrap;width:auto!important;box-sizing:border-box}
+.leaflet-bar.leaflet-control-scan a:hover{background:#f4f4f4}
+.leaflet-bar.leaflet-control-scan a.on{background:var(--ink);color:#fff}
+.leaflet-control-scan .sw{width:16px;height:11px}
+
 @media (max-width:760px){
   #map{right:0;bottom:46%} #panel{top:auto;height:46%;width:100%;border-left:0;border-top:1px solid var(--line)} :root{--panel-w:0px}
 }
@@ -189,6 +195,14 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
     clip();
   }
 
+
+  // "full scan" toggle on the map: shows the whole sheet (all stacked sheets) under the separated layers
+  const ScanCtl=L.Control.extend({onAdd(){
+    const d=L.DomUtil.create('div','leaflet-bar leaflet-control leaflet-control-scan');
+    const a=L.DomUtil.create('a','',d); a.href='#'; a.innerHTML='<span class="sw scan"></span>הסריקה המלאה · full scan'; a.title='הצג את הגיליון כולו · show the whole sheet';
+    L.DomEvent.on(a,'click',e=>{ L.DomEvent.stop(e); const on=!S.active.every(n=>S.shown[n].scan); for(const n of S.active) S.shown[n].scan=on; renderStack(); syncA(); });
+    S.scanBtn=a; return d; }});
+  new ScanCtl({position:'topright'}).addTo(map);
   // ---------- sheet list (multi-select)
   const list=document.getElementById('sheets');
   for(const g of ['survey','past','plan']){
@@ -242,6 +256,7 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
     if(!S.active.includes(S.baseFrom)) S.baseFrom=S.active[0]||null;
     if(S.baseFrom) bf.value=S.baseFrom;
     document.querySelectorAll('.sheet').forEach(b=>b.classList.toggle('active',S.active.includes(b.dataset.num)));
+    if(S.scanBtn) S.scanBtn.classList.toggle('on',S.active.length>0&&S.active.every(n=>S.shown[n].scan));
     note();
   }
   async function toggleSheet(num){
