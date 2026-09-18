@@ -1,0 +1,1106 @@
+{
+ "collection": {
+  "title_he": "הרובע היהודי 1967 — גיליונות התכנון של אהוד נצר",
+  "title_en": "The Jewish Quarter, 1967 — Ehud Netzer's planning sheets",
+  "creator": "אהוד נצר (מנצ'ל)",
+  "creator_en": "Ehud Netzer (born Menczel), 1934–2010",
+  "creator_wikidata": "Q573909",
+  "date_created": "1967",
+  "rights": "© Estate of Ehud Netzer; digitised and curated by Yael Netzer",
+  "license": "TBD",
+  "curator": "Yael Netzer",
+  "generated": "2026-09-18"
+ },
+ "bounds": [
+  [
+   31.771596035125267,
+   35.226451975937806
+  ],
+  [
+   31.77887154824895,
+   35.23700780192417
+  ]
+ ],
+ "res_m": 0.6,
+ "crs": "EPSG:3857 frame; bounds in WGS84 (EPSG:4326)",
+ "groups": {
+  "survey": [
+   "הסקר, 1967",
+   "The survey, 1967"
+  ],
+  "past": [
+   "בעבר",
+   "The past"
+  ],
+  "plan": [
+   "התכנית",
+   "The plan"
+  ]
+ },
+ "sheets": [
+  {
+   "num": "0008",
+   "identifier": "JQ1967-0008",
+   "group": "survey",
+   "order": 1,
+   "he": "מערכת הדרכים 1967",
+   "translit": "Ma'arekhet ha-derakhim 1967",
+   "en": "Road system, 1967",
+   "confidence": "high",
+   "reading_notes": "",
+   "description": "Roads in and around the Quarter by user: vehicular roads (dark red), main pedestrian routes (orange), secondary pedestrian routes (yellow). Arrows mark the entries from Jaffa Gate and from the Dung Gate road.",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "hasVersion JQ1967-0020; hasVersion JQ1967-0024",
+   "scan": "Jewish Quarter Jerusalem0008.JPG",
+   "scan_size": [
+    1200,
+    1889
+   ],
+   "georef": "georef/0008.json",
+   "layers": [
+    {
+     "key": "vehicle",
+     "file": "layers/0008_vehicle.webp"
+    },
+    {
+     "key": "ped_main",
+     "file": "layers/0008_ped_main.webp"
+    },
+    {
+     "key": "ped_sec",
+     "file": "layers/0008_ped_sec.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0008_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0008_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "vehicle",
+     "seed": "#b55b54",
+     "color": "#b55449",
+     "kind": "line",
+     "he": "רכב",
+     "en": "Vehicles",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "ped_main",
+     "seed": "#c87856",
+     "color": "#cd764b",
+     "kind": "line",
+     "he": "הולכי רגל (ראשי)",
+     "en": "Pedestrians, main",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "ped_sec",
+     "seed": "#dfae6d",
+     "color": "#e1ab64",
+     "kind": "line",
+     "he": "הולכי רגל (משני)",
+     "en": "Pedestrians, secondary",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0008.png"
+  },
+  {
+   "num": "0013",
+   "identifier": "JQ1967-0013",
+   "group": "survey",
+   "order": 2,
+   "he": "גובה מבנים ברובע (1967)",
+   "translit": "Govah mivnim ba-rova (1967)",
+   "en": "Building heights in the Quarter, 1967",
+   "confidence": "high",
+   "reading_notes": "",
+   "description": "Number of storeys per parcel in 1967: 3–4 (dark red), 2–3 (orange), 1–2 (yellow, applied as a pale wash).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0013.JPG",
+   "scan_size": [
+    1200,
+    1879
+   ],
+   "georef": "georef/0013.json",
+   "layers": [
+    {
+     "key": "h34",
+     "file": "layers/0013_h34.webp"
+    },
+    {
+     "key": "h23",
+     "file": "layers/0013_h23.webp"
+    },
+    {
+     "key": "h12",
+     "file": "layers/0013_h12.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0013_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0013_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "h34",
+     "seed": "#b5453a",
+     "color": "#b04a3b",
+     "kind": "fill",
+     "he": "3–4 קומות",
+     "en": "3–4 floors",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "h23",
+     "seed": "#ebb95e",
+     "color": "#e3ad5d",
+     "kind": "fill",
+     "he": "2–3 קומות",
+     "en": "2–3 floors",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "h12",
+     "seed": "#f2e3c2",
+     "color": "#f6e4cd",
+     "kind": "fill",
+     "he": "1–2 קומות",
+     "en": "1–2 floors",
+     "quality": "good",
+     "notes": "His yellow marker used as a light fill reads as a pale cream wash."
+    }
+   ],
+   "legend_img": "legends/0013.png"
+  },
+  {
+   "num": "0014",
+   "identifier": "JQ1967-0014",
+   "group": "survey",
+   "order": 3,
+   "he": "שטחים פנויים (1967)",
+   "translit": "Shtahim penuyim (1967)",
+   "en": "Vacant areas, 1967",
+   "confidence": "high",
+   "reading_notes": "",
+   "description": "Condition of parcels in 1967: destroyed (orange-red), partly destroyed (yellow), empty (dark teal hatching, including the outline of the area cleared in front of the Western Wall).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0014.JPG",
+   "scan_size": [
+    1200,
+    1834
+   ],
+   "georef": "georef/0014.json",
+   "layers": [
+    {
+     "key": "destroyed",
+     "file": "layers/0014_destroyed.webp"
+    },
+    {
+     "key": "partial",
+     "file": "layers/0014_partial.webp"
+    },
+    {
+     "key": "empty",
+     "file": "layers/0014_empty.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0014_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0014_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "destroyed",
+     "seed": "#cc6a3f",
+     "color": "#c55e31",
+     "kind": "fill",
+     "he": "הרוס",
+     "en": "Destroyed",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "partial",
+     "seed": "#e4b061",
+     "color": "#e8b55d",
+     "kind": "fill",
+     "he": "הרוס חלקי",
+     "en": "Partly destroyed",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "empty",
+     "seed": "#4f606d",
+     "color": "#4e5f6b",
+     "kind": "fill",
+     "he": "ריק",
+     "en": "Empty",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0014.png"
+  },
+  {
+   "num": "0015",
+   "identifier": "JQ1967-0015",
+   "group": "survey",
+   "order": 4,
+   "he": "בעלויות לפני ההפקעה",
+   "translit": "Ba'aluyot lifnei ha-hafka'a",
+   "en": "Ownership before the expropriation",
+   "confidence": "high",
+   "reading_notes": "",
+   "description": "Ownership of parcels before the 1968 expropriation: Jewish property (navy), Muslim waqf (red), family Muslim waqf (orange), private Muslim property (yellow wash), church property (purple outline), municipal or government property (green hatching).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0015.JPG",
+   "scan_size": [
+    1200,
+    1843
+   ],
+   "georef": "georef/0015.json",
+   "layers": [
+    {
+     "key": "jewish",
+     "file": "layers/0015_jewish.webp"
+    },
+    {
+     "key": "waqf",
+     "file": "layers/0015_waqf.webp"
+    },
+    {
+     "key": "family_waqf",
+     "file": "layers/0015_family_waqf.webp"
+    },
+    {
+     "key": "muslim_private",
+     "file": "layers/0015_muslim_private.webp"
+    },
+    {
+     "key": "church",
+     "file": "layers/0015_church.webp"
+    },
+    {
+     "key": "municipal",
+     "file": "layers/0015_municipal.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0015_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0015_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "jewish",
+     "seed": "#304184",
+     "color": "#2d3670",
+     "kind": "fill",
+     "he": "רכוש יהודי",
+     "en": "Jewish property",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "waqf",
+     "seed": "#bd4a3d",
+     "color": "#b04a43",
+     "kind": "fill",
+     "he": "וקף מוסלמי",
+     "en": "Muslim waqf",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "family_waqf",
+     "seed": "#ebb95e",
+     "color": "#f1ca70",
+     "kind": "fill",
+     "he": "וקף מוסלמי משפחתי",
+     "en": "Family Muslim waqf",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "muslim_private",
+     "seed": "#f2e3c2",
+     "color": "#e2bd93",
+     "kind": "fill",
+     "he": "רכוש מוסלמי פרטי",
+     "en": "Private Muslim property",
+     "quality": "good",
+     "notes": "Pale cream wash (his yellow marker)."
+    },
+    {
+     "key": "church",
+     "seed": "#5a3f8a",
+     "color": "#57477c",
+     "kind": "line",
+     "he": "רכוש כנסיות",
+     "en": "Church property",
+     "quality": "good",
+     "notes": "Outline stroke; same pigment family as the navy fills, separated by kind (line vs fill)."
+    },
+    {
+     "key": "municipal",
+     "seed": "#4f6976",
+     "color": "#4f6875",
+     "kind": "fill",
+     "he": "רכוש עיריה או ממשלה",
+     "en": "Municipal or government property",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0015.png"
+  },
+  {
+   "num": "0018",
+   "identifier": "JQ1967-0018",
+   "group": "survey",
+   "order": 5,
+   "he": "חנויות ובתי מלאכה",
+   "translit": "Hanuyot u-vatei melakha",
+   "en": "Shops and workshops",
+   "confidence": "medium",
+   "reading_notes": "Second word of the title read as בתי מלאכה; verify against the original.",
+   "description": "Commercial frontages: shops and workshops marked in red along the streets, densest along David Street / Street of the Chain and the market streets to the north.",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0018.JPG",
+   "scan_size": [
+    1200,
+    1923
+   ],
+   "georef": "georef/0018.json",
+   "layers": [
+    {
+     "key": "shops",
+     "file": "layers/0018_shops.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0018_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0018_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "shops",
+     "seed": "#c0442c",
+     "color": "#b54c3c",
+     "kind": "line",
+     "he": "חנויות ובתי מלאכה",
+     "en": "Shops and workshops",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0018.png"
+  },
+  {
+   "num": "0016",
+   "identifier": "JQ1967-0016",
+   "group": "past",
+   "order": 6,
+   "he": "תחום הרובע (בעבר)",
+   "translit": "Tehum ha-rova (be-avar)",
+   "en": "Extent of the Quarter in the past",
+   "confidence": "high",
+   "reading_notes": "The two dashed boundaries are labelled 1929 (orange) and 1936 (yellow) in the margin; dashed yellow circles east of the Quarter probably mark Jewish holdings outside it.",
+   "description": "Former extent of the Jewish Quarter: dashed boundaries for 1929 (orange) and 1936 (yellow); major Jewish institutions as solid dark-brown blocks.",
+   "description_he": "",
+   "coverage_temporal": "1929/1936",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0016.JPG",
+   "scan_size": [
+    1200,
+    1906
+   ],
+   "georef": "georef/0016.json",
+   "layers": [
+    {
+     "key": "extent_1929",
+     "file": "layers/0016_extent_1929.webp"
+    },
+    {
+     "key": "extent_1936",
+     "file": "layers/0016_extent_1936.webp"
+    },
+    {
+     "key": "institutions",
+     "file": "layers/0016_institutions.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0016_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0016_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "extent_1929",
+     "seed": "#d1723e",
+     "color": "#cf733f",
+     "kind": "line",
+     "he": "1929",
+     "en": "Boundary, 1929",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "extent_1936",
+     "seed": "#e4b061",
+     "color": "#f3c976",
+     "kind": "line",
+     "he": "1936",
+     "en": "Boundary, 1936",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "institutions",
+     "seed": "#7a3b2a",
+     "color": "#69342f",
+     "kind": "fill",
+     "he": "מוסדות",
+     "en": "Institutions",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0016.png"
+  },
+  {
+   "num": "0019",
+   "identifier": "JQ1967-0019",
+   "group": "past",
+   "order": 7,
+   "he": "מוסדות יהודיים ברובע (בעבר)",
+   "translit": "Mosdot yehudiyim ba-rova (be-avar)",
+   "en": "Jewish institutions in the Quarter, past",
+   "confidence": "high",
+   "reading_notes": "Dots inside parcels are not explained in the legend; probably smaller synagogues. The orange loop on the east marks the prayer area at the Western Wall.",
+   "description": "Former Jewish institutions: synagogues (dark brown), batei midrash (orange), hospitals (yellow wash); dots for smaller institutions; the Western Wall prayer area outlined in orange.",
+   "description_he": "",
+   "coverage_temporal": "before 1948",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0019.JPG",
+   "scan_size": [
+    1200,
+    1920
+   ],
+   "georef": "georef/0019.json",
+   "layers": [
+    {
+     "key": "synagogue",
+     "file": "layers/0019_synagogue.webp"
+    },
+    {
+     "key": "midrash",
+     "file": "layers/0019_midrash.webp"
+    },
+    {
+     "key": "hospital",
+     "file": "layers/0019_hospital.webp"
+    },
+    {
+     "key": "kotel_route",
+     "file": "layers/0019_kotel_route.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0019_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0019_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "synagogue",
+     "seed": "#7a3b2a",
+     "color": "#774d44",
+     "kind": "fill",
+     "he": "בית כנסת",
+     "en": "Synagogue",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "midrash",
+     "seed": "#ebb95e",
+     "color": "#f3d79f",
+     "kind": "fill",
+     "he": "בית מדרש",
+     "en": "Beit midrash",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "hospital",
+     "seed": "#f2e3c2",
+     "color": "#f5dec8",
+     "kind": "fill",
+     "he": "בית חולים",
+     "en": "Hospital",
+     "quality": "good",
+     "notes": "Pale cream wash (his yellow marker)."
+    },
+    {
+     "key": "kotel_route",
+     "seed": "#d6813a",
+     "color": "#de814c",
+     "kind": "line",
+     "he": "(מסלול לכותל)",
+     "en": "(route to the Western Wall)",
+     "quality": "good",
+     "notes": "Not in his legend: the orange loop around the Western Wall prayer area."
+    }
+   ],
+   "legend_img": "legends/0019.png"
+  },
+  {
+   "num": "0021",
+   "identifier": "JQ1967-0021",
+   "group": "plan",
+   "order": 8,
+   "he": "סכמת התכנון",
+   "translit": "Skhemat ha-tikhnun",
+   "en": "Planning scheme",
+   "confidence": "medium",
+   "reading_notes": "Title read as סכמת התכנון.",
+   "description": "The planning concept: a vehicular ring outside the walls (red, with arrows), pedestrian spines through the Quarter (purple), open squares (blue) and the descent to the Western Wall (dashed navy arrow).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0021.JPG",
+   "scan_size": [
+    1307,
+    1800
+   ],
+   "georef": "georef/0021.json",
+   "layers": [
+    {
+     "key": "ring_road",
+     "file": "layers/0021_ring_road.webp"
+    },
+    {
+     "key": "ped_spine",
+     "file": "layers/0021_ped_spine.webp"
+    },
+    {
+     "key": "plaza",
+     "file": "layers/0021_plaza.webp"
+    },
+    {
+     "key": "descent",
+     "file": "layers/0021_descent.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0021_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0021_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "ring_road",
+     "seed": "#b74b3b",
+     "color": "#c05545",
+     "kind": "line",
+     "he": "דרך רכב",
+     "en": "Vehicular ring",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "ped_spine",
+     "seed": "#c9a8c4",
+     "color": "#dec2e5",
+     "kind": "line",
+     "he": "צירי הולכי רגל",
+     "en": "Pedestrian spines",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "plaza",
+     "seed": "#7981b8",
+     "color": "#7a91d1",
+     "kind": "fill",
+     "he": "כיכרות",
+     "en": "Open squares",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "descent",
+     "seed": "#4a3c6e",
+     "color": "#513c61",
+     "kind": "line",
+     "he": "ירידה לכותל",
+     "en": "Descent to the Western Wall",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0021.png"
+  },
+  {
+   "num": "0017",
+   "identifier": "JQ1967-0017",
+   "group": "plan",
+   "order": 9,
+   "he": "תכנית שימור",
+   "translit": "Tokhnit shimur",
+   "en": "Preservation plan",
+   "confidence": "high",
+   "reading_notes": "",
+   "description": "Preservation status per building: to preserve (blue outline), to rehabilitate (brown outline), special value (red fill), special façade (navy line).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "",
+   "scan": "Jewish Quarter Jerusalem0017.JPG",
+   "scan_size": [
+    1200,
+    1881
+   ],
+   "georef": "georef/0017.json",
+   "layers": [
+    {
+     "key": "preserve",
+     "file": "layers/0017_preserve.webp"
+    },
+    {
+     "key": "rehab",
+     "file": "layers/0017_rehab.webp"
+    },
+    {
+     "key": "special",
+     "file": "layers/0017_special.webp"
+    },
+    {
+     "key": "facade",
+     "file": "layers/0017_facade.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0017_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0017_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "preserve",
+     "seed": "#7d97cf",
+     "color": "#7e95d4",
+     "kind": "line",
+     "he": "לשימור",
+     "en": "To preserve",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "rehab",
+     "seed": "#9e5448",
+     "color": "#8c504c",
+     "kind": "line",
+     "he": "לשיקום",
+     "en": "To rehabilitate",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "special",
+     "seed": "#b83f1d",
+     "color": "#b64230",
+     "kind": "fill",
+     "he": "ערך מיוחד",
+     "en": "Special value",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "facade",
+     "seed": "#3b3566",
+     "color": "#565386",
+     "kind": "line",
+     "he": "חזית מיוחדת",
+     "en": "Special façade",
+     "quality": "medium",
+     "notes": "Thin navy strokes close to the base-pen colour; partly captured."
+    }
+   ],
+   "legend_img": "legends/0017.png"
+  },
+  {
+   "num": "0025",
+   "identifier": "JQ1967-0025",
+   "group": "plan",
+   "order": 10,
+   "he": "תכנון דרכים חדשות",
+   "translit": "Tikhnun derakhim hadashot",
+   "en": "Land use and new roads",
+   "confidence": "medium",
+   "reading_notes": "Title partly obscured; land-use legend: plan boundary, residential, institutions, hotels and commerce, public institutions, shop frontage, Western Wall plaza. Red fills read as buildings to be removed for the new paths.",
+   "description": "Proposed land use on the redrawn block plan, with new paths (yellow) and buildings to be removed for them (red). First state of the drawing reworked in 0028, 0027, 0031 and 0032.",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "isVersionOf JQ1967-0028; isVersionOf JQ1967-0027; isVersionOf JQ1967-0031; isVersionOf JQ1967-0032",
+   "scan": "Jewish Quarter Jerusalem0025.JPG",
+   "scan_size": [
+    1200,
+    1813
+   ],
+   "georef": "georef/0025.json",
+   "layers": [
+    {
+     "key": "paths",
+     "file": "layers/0025_paths.webp"
+    },
+    {
+     "key": "removed",
+     "file": "layers/0025_removed.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0025_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0025_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "paths",
+     "seed": "#e0b040",
+     "color": "#dbaf6c",
+     "kind": "line",
+     "he": "דרכים",
+     "en": "Paths",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "removed",
+     "seed": "#b0402a",
+     "color": "#9e454b",
+     "kind": "fill",
+     "he": "(להריסה)",
+     "en": "(to be removed)",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0025.png"
+  },
+  {
+   "num": "0028",
+   "identifier": "JQ1967-0028",
+   "group": "plan",
+   "order": 11,
+   "he": "תכנון דרכים",
+   "translit": "Tikhnun derakhim",
+   "en": "Roads plan",
+   "confidence": "high",
+   "reading_notes": "Yellow paths and pale tan road bands are not separable in this scan and are kept as one layer.",
+   "description": "Roads and paths on the land-use plan (yellow and tan) with proposed gardens (green).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "isVersionOf JQ1967-0025",
+   "scan": "Jewish Quarter Jerusalem0028.JPG",
+   "scan_size": [
+    1200,
+    1839
+   ],
+   "georef": "georef/0028.json",
+   "layers": [
+    {
+     "key": "paths",
+     "file": "layers/0028_paths.webp"
+    },
+    {
+     "key": "gardens",
+     "file": "layers/0028_gardens.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0028_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0028_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "paths",
+     "seed": "#e4c878",
+     "color": "#e4c478",
+     "kind": "line",
+     "he": "דרכים ושבילים (צהוב ובז')",
+     "en": "Roads and paths (yellow and tan)",
+     "quality": "medium",
+     "notes": "Yellow paths and tan road bands merged: not separable in the scan."
+    },
+    {
+     "key": "gardens",
+     "seed": "#9fbf6a",
+     "color": "#e6e4ae",
+     "kind": "fill",
+     "he": "גינות",
+     "en": "Gardens",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0028.png"
+  },
+  {
+   "num": "0027",
+   "identifier": "JQ1967-0027",
+   "group": "plan",
+   "order": 12,
+   "he": "גבהים מתוכננים",
+   "translit": "Gvahim metukhnanim",
+   "en": "Planned heights",
+   "confidence": "high",
+   "reading_notes": "",
+   "description": "Planned building heights on the land-use plan: 4 storeys (navy), 3 storeys (red), 1–2 storeys (yellow).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "isVersionOf JQ1967-0025",
+   "scan": "Jewish Quarter Jerusalem0027.JPG",
+   "scan_size": [
+    1200,
+    1832
+   ],
+   "georef": "georef/0027.json",
+   "layers": [
+    {
+     "key": "p4",
+     "file": "layers/0027_p4.webp"
+    },
+    {
+     "key": "p3",
+     "file": "layers/0027_p3.webp"
+    },
+    {
+     "key": "p12",
+     "file": "layers/0027_p12.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0027_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0027_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "p4",
+     "seed": "#2d2649",
+     "color": "#403363",
+     "kind": "fill",
+     "he": "4 קומות",
+     "en": "4 floors",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "p3",
+     "seed": "#9a3a30",
+     "color": "#993737",
+     "kind": "fill",
+     "he": "3 קומות",
+     "en": "3 floors",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "p12",
+     "seed": "#f2d066",
+     "color": "#dcb46e",
+     "kind": "fill",
+     "he": "1–2 קומות",
+     "en": "1–2 floors",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0027.png"
+  },
+  {
+   "num": "0031",
+   "identifier": "JQ1967-0031",
+   "group": "plan",
+   "order": 13,
+   "he": "אתר פרויקט \"החורבה\"",
+   "translit": "Atar proyekt \"ha-Hurva\"",
+   "en": "The \"Hurva\" project site",
+   "confidence": "medium",
+   "reading_notes": "Title and legend cut by the slide mount; reading of the second line uncertain.",
+   "description": "Heavy navy outlines around the compounds of the Hurva square and the blocks south of it, on the land-use plan: the first project site.",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "isVersionOf JQ1967-0025",
+   "scan": "Jewish Quarter Jerusalem0031.JPG",
+   "scan_size": [
+    1200,
+    2063
+   ],
+   "georef": "georef/0031.json",
+   "layers": [
+    {
+     "key": "site",
+     "file": "layers/0031_site.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0031_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0031_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "site",
+     "seed": "#2a2a5a",
+     "color": "#2a2a5a",
+     "kind": "line",
+     "he": "אתר",
+     "en": "Site outline",
+     "quality": "medium",
+     "notes": "Same pen as the base hatching; separated by stroke weight only."
+    }
+   ],
+   "legend_img": "legends/0031.png"
+  },
+  {
+   "num": "0032",
+   "identifier": "JQ1967-0032",
+   "group": "plan",
+   "order": 14,
+   "he": "תכנון: שלבי ביצוע",
+   "translit": "Tikhnun: shlavei bitsua",
+   "en": "Phasing",
+   "confidence": "low",
+   "reading_notes": "Title and legend cut by the slide mount; legend entries read as חניון (parking), רכב (vehicle), מסלול כיום (current route).",
+   "description": "Phasing / access: parking on the Armenian garden (orange hatching), vehicle routes inside the Quarter (yellow), the current route around the walls (dashed).",
+   "description_he": "",
+   "coverage_temporal": "1967",
+   "relation": "isVersionOf JQ1967-0025",
+   "scan": "Jewish Quarter Jerusalem0032.JPG",
+   "scan_size": [
+    1200,
+    1918
+   ],
+   "georef": "georef/0032.json",
+   "layers": [
+    {
+     "key": "parking",
+     "file": "layers/0032_parking.webp"
+    },
+    {
+     "key": "vehicle",
+     "file": "layers/0032_vehicle.webp"
+    },
+    {
+     "key": "today",
+     "file": "layers/0032_today.webp"
+    },
+    {
+     "key": "base",
+     "file": "layers/0032_base.webp"
+    },
+    {
+     "key": "scan",
+     "file": "layers/0032_scan.webp"
+    }
+   ],
+   "classes": [
+    {
+     "key": "parking",
+     "seed": "#c8602a",
+     "color": "#c17143",
+     "kind": "fill",
+     "he": "חניון",
+     "en": "Parking",
+     "quality": "medium",
+     "notes": "Orange hatching; yellow route rims partly attracted to this class."
+    },
+    {
+     "key": "vehicle",
+     "seed": "#e0b040",
+     "color": "#ecbf72",
+     "kind": "line",
+     "he": "רכב",
+     "en": "Vehicle route",
+     "quality": "good",
+     "notes": ""
+    },
+    {
+     "key": "today",
+     "seed": "#a0503a",
+     "color": "#a04b3a",
+     "kind": "line",
+     "he": "מסלול כיום",
+     "en": "Current route (dashed)",
+     "quality": "good",
+     "notes": ""
+    }
+   ],
+   "legend_img": "legends/0032.png"
+  }
+ ]
+}

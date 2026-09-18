@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הרובע היהודי 1967 — אטלס</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+:root{
+  --paper:#f4ecdc; --paper2:#ece1cc; --ink:#3d3550; --ink2:#6b6178; --line:#d9cdb6;
+  --red:#b5453a; --orange:#d1723e; --yellow:#e4b061; --navy:#304184; --teal:#4f6976; --purple:#5a3f8a;
+  --panel-w:340px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:-apple-system,"Segoe UI",Helvetica,Arial,"Noto Sans Hebrew",sans-serif;color:var(--ink);background:var(--paper)}
+#map{position:absolute;inset:0;right:var(--panel-w)}
+#panel{position:absolute;top:0;right:0;bottom:0;width:var(--panel-w);background:var(--paper);border-left:1px solid var(--line);overflow-y:auto;padding:14px 16px 24px;box-shadow:-2px 0 12px rgba(0,0,0,.06)}
+h1{font-size:18px;margin:0 0 2px;font-weight:600;letter-spacing:.2px}
+.sub{font-size:12px;color:var(--ink2);margin:0 0 14px;direction:ltr;text-align:right}
+h2{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink2);margin:18px 0 8px;font-weight:600}
+.group{margin-bottom:6px}
+.group .gname{font-size:12px;color:var(--ink2);margin:6px 0 4px}
+.sheet{display:block;width:100%;text-align:right;border:1px solid transparent;background:transparent;padding:6px 8px;border-radius:6px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.25}
+.sheet small{display:block;font-size:11px;color:var(--ink2);direction:ltr;text-align:right}
+.sheet:hover{background:var(--paper2)}
+.sheet.active{background:#fff;border-color:var(--line);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.legend-img{border:1px solid var(--line);border-radius:6px;background:#fff;display:block}
+.row{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:13px}
+.row label{flex:1;cursor:pointer;display:flex;align-items:center;gap:8px}
+.row .en{font-size:11px;color:var(--ink2);direction:ltr}
+.sw{width:22px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.18);flex:none}
+.sw.line{height:6px;border-radius:2px}
+.sw.ink{background:repeating-linear-gradient(45deg,#8a7a9a 0 1px,transparent 1px 4px);background-color:#fff}
+.sw.scan{background:linear-gradient(135deg,#f4ecdc,#d9cdb6)}
+input[type=range]{width:100%;accent-color:var(--navy)}
+.small{font-size:12px;color:var(--ink2)}
+.ctl{display:flex;align-items:center;gap:8px;font-size:13px;padding:4px 2px}
+select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--ink);max-width:100%}
+.toggle{display:flex;gap:4px;margin:4px 0 8px}
+.toggle button{flex:1;font:inherit;font-size:12px;padding:5px 4px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.toggle button:first-child{border-radius:6px 0 0 6px}.toggle button:last-child{border-radius:0 6px 6px 0}
+.toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+#swipe{position:absolute;top:0;bottom:0;width:0;border-left:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.35);pointer-events:none;display:none;z-index:650}
+#swipe .knob{position:absolute;top:50%;left:-16px;width:32px;height:32px;border-radius:50%;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.35);transform:translateY(-50%);display:flex;align-items:center;justify-content:center;font-size:14px;color:#333;pointer-events:auto;cursor:ew-resize}
+.note{font-size:11.5px;color:var(--ink2);line-height:1.45;margin-top:14px;border-top:1px dashed var(--line);padding-top:10px}
+.leaflet-container{background:var(--paper)}
+.light-tiles{filter:grayscale(1) brightness(1.12) contrast(.82)}
+.legend-img{max-height:110px;width:auto;max-width:100%;margin:6px auto 10px;cursor:zoom-in}
+.legend-img.big{max-height:none;width:100%;cursor:zoom-out}
+.creator{font-size:13px;margin:0 0 2px;color:var(--ink)}
+.about{font-size:12px;color:var(--ink2);line-height:1.45;margin:4px 0 8px}
+.about summary{cursor:pointer;color:var(--ink);font-weight:600;font-size:12px}
+.about dl{margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px}
+.about dt{color:var(--ink2)} .about dd{margin:0;color:var(--ink)}
+.about .en{direction:ltr;text-align:left;display:block}
+.conf{display:inline-block;font-size:10px;padding:1px 6px;border-radius:9px;border:1px solid var(--line);vertical-align:middle;margin-right:4px}
+.conf.high{background:#e8efe3}.conf.medium{background:#f7ecd2}.conf.low{background:#f3dcd6}
+.qual{font-size:10px;color:var(--ink2)}
+.sheet .tick{display:inline-block;width:14px;height:14px;border:1px solid var(--line);border-radius:3px;margin-left:8px;vertical-align:-2px;background:#fff}
+.sheet.active .tick{background:var(--ink);border-color:var(--ink)}
+.block{border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 10px;margin:8px 0}
+.block .bh{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;margin-bottom:4px}
+.block .bh .x{margin-right:auto;cursor:pointer;color:var(--ink2);font-weight:400;font-size:12px}
+.block .legend-img{max-height:90px;margin:4px auto 6px}
+.leaflet-control-attribution{font-size:9px}
+@media (max-width:760px){
+  #map{right:0;bottom:46%} #panel{top:auto;height:46%;width:100%;border-left:0;border-top:1px solid var(--line)} :root{--panel-w:0px}
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="swipe"><div class="knob">⇔</div></div>
+<aside id="panel">
+  <h1>הרובע היהודי, 1967</h1>
+  <p class="creator" id="creator"></p>
+  <p class="sub">The planning sheets, laid on the city as it is today</p>
+
+  <h2>הגיליונות · Sheets</h2>
+  <div class="small" style="margin:-4px 0 6px">לחיצה מוסיפה גיליון לערימה, לחיצה נוספת מסירה · click to add a sheet to the stack, click again to remove</div>
+  <div id="sheets"></div>
+
+  <h2>שכבות · Layers</h2>
+  <div id="stack"></div>
+  <div class="row"><label><input type="checkbox" id="basechk" checked><span class="sw ink"></span><span>קווי הבסיס (עט דק)</span><span class="en">base linework, once</span></label></div>
+  <div class="ctl"><span class="small">מתוך · from</span><select id="basefrom"></select></div>
+  <div class="ctl"><span class="small">שקיפות · Opacity</span></div>
+  <input id="opacity" type="range" min="0" max="1" step="0.02" value="0.9">
+  <div class="toggle" id="mode">
+    <button data-m="pen" class="on">כפי שצייר · As drawn</button>
+    <button data-m="flat">צבע אחיד · Flat colour</button>
+  </div>
+
+  <h2>השוואה · Compare</h2>
+  <div class="ctl"><select id="compare"><option value="">— ללא · none —</option></select></div>
+  <div class="small">גרור את המחלק על המפה · drag the divider on the map</div>
+
+  <h2>רקע · Background</h2>
+  <div class="toggle" id="base">
+    <button data-b="light" class="on">בהיר · Light</button>
+    <button data-b="osm">OSM</button>
+    <button data-b="sat">אוויר · Aerial</button>
+  </div>
+  <div class="ctl"><span class="small">נייר ↔ מפה · paper ↔ map</span></div>
+  <input id="bgop" type="range" min="0" max="1" step="0.02" value="0.25">
+  <div class="row"><label><input type="checkbox" id="ref"> <span class="sw" style="background:#00a2ff;height:3px"></span> חומות והר הבית מ־OSM · OSM walls (alignment check)</label></div>
+
+  <div class="note" id="note"></div>
+</aside>
+<script>
+(async function(){
+  const M = await (await fetch('manifest.json')).json();
+  const bounds = L.latLngBounds(M.bounds);
+  const map = L.map('map',{zoomControl:true, zoomSnap:0.25, maxZoom:20});
+  window.atlas={map,M};
+  map.fitBounds(bounds);
+  setTimeout(()=>{ map.invalidateSize(); map.fitBounds(bounds); },80);
+  map.createPane('sheetA'); map.getPane('sheetA').style.zIndex=410;
+  map.createPane('sheetB'); map.getPane('sheetB').style.zIndex=420;
+  map.createPane('ref');    map.getPane('ref').style.zIndex=430;
+
+  const bases = {
+    osm:  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:20,maxNativeZoom:19,attribution:'© OpenStreetMap contributors'}),
+    light:L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:20,maxNativeZoom:19,className:'light-tiles',attribution:'© OpenStreetMap contributors'}),
+    sat:  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:20,maxNativeZoom:19,attribution:'Imagery © Esri'})
+  };
+  const bgop=document.getElementById('bgop');
+  let base = bases.light.setOpacity(+bgop.value).addTo(map);
+  document.querySelectorAll('#base button').forEach(b=>b.onclick=()=>{
+    document.querySelectorAll('#base button').forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    map.removeLayer(base); base=bases[b.dataset.b].setOpacity(+bgop.value).addTo(map);
+  });
+  bgop.oninput=e=>base.setOpacity(+e.target.value);
+
+  const ref = L.geoJSON(await (await fetch('reference.geojson')).json(),{pane:'ref',style:f=>({color: f.properties.name==='Temple Mount'?'#8a2be2':'#00a2ff',weight:2,opacity:.9,fill:false})});
+  document.getElementById('ref').onchange=e=>e.target.checked?ref.addTo(map):map.removeLayer(ref);
+
+  // ---------- state
+  const S = {active:[], shown:{}, cmp:null, opacity:0.9, mode:'pen', baseOn:true, baseFrom:null, layersA:{}, layersB:{}};
+  const flatCache = new Map();
+  const sheetByNum=n=>M.sheets.find(s=>s.num===n);
+  const classOf=(sheet,key)=>sheet.classes.find(c=>c.key===key);
+
+  async function flatUrl(file,hex){
+    const k=file+hex; if(flatCache.has(k)) return flatCache.get(k);
+    const img=new Image(); img.src=file; await img.decode();
+    const c=document.createElement('canvas'); c.width=img.width; c.height=img.height;
+    const g=c.getContext('2d'); g.drawImage(img,0,0);
+    const d=g.getImageData(0,0,c.width,c.height), p=d.data;
+    const r=parseInt(hex.slice(1,3),16), gg=parseInt(hex.slice(3,5),16), b=parseInt(hex.slice(5,7),16);
+    for(let i=0;i<p.length;i+=4){ if(p[i+3]){ p[i]=r;p[i+1]=gg;p[i+2]=b; p[i+3]=Math.min(255,p[i+3]*4); } }
+    g.putImageData(d,0,0);
+    const url=await new Promise(res=>c.toBlob(bl=>res(URL.createObjectURL(bl)),'image/png'));
+    flatCache.set(k,url); return url;
+  }
+  const overlay=(file,pane)=>L.imageOverlay(file,bounds,{pane,opacity:S.opacity,interactive:false,crossOrigin:'anonymous'});
+
+  // desired set of layers for pane A: {id -> url}
+  async function wantedA(){
+    const w={};
+    if(S.baseOn && S.baseFrom){ const sh=sheetByNum(S.baseFrom); const ly=sh.layers.find(l=>l.key==='base'); w[S.baseFrom+':base']=ly.file; }
+    for(const num of S.active){
+      const sh=sheetByNum(num), shown=S.shown[num];
+      for(const ly of sh.layers){
+        if(ly.key==='base' || !shown[ly.key]) continue;
+        const cls=classOf(sh,ly.key);
+        w[num+':'+ly.key]=(S.mode==='flat'&&cls)?await flatUrl(ly.file,cls.color):ly.file;
+      }
+    }
+    return w;
+  }
+  async function syncA(){
+    const w=await wantedA();
+    for(const id in S.layersA){ if(!(id in w) || S.layersA[id]._url!==w[id]){ map.removeLayer(S.layersA[id]); delete S.layersA[id]; } }
+    for(const id in w){ if(!S.layersA[id]) S.layersA[id]=overlay(w[id],'sheetA').addTo(map); }
+    clip();
+  }
+  async function mountB(){
+    for(const k in S.layersB){ map.removeLayer(S.layersB[k]); delete S.layersB[k]; }
+    if(!S.cmp) return;
+    const sh=sheetByNum(S.cmp);
+    for(const ly of sh.layers){
+      if(ly.key==='scan') continue;
+      const cls=classOf(sh,ly.key);
+      const url=(S.mode==='flat'&&cls)?await flatUrl(ly.file,cls.color):ly.file;
+      S.layersB[ly.key]=overlay(url,'sheetB').addTo(map);
+    }
+    clip();
+  }
+
+  // ---------- sheet list (multi-select)
+  const list=document.getElementById('sheets');
+  for(const g of ['survey','past','plan']){
+    const gd=document.createElement('div'); gd.className='group';
+    gd.innerHTML=`<div class="gname">${M.groups[g][0]} · <span style="direction:ltr">${M.groups[g][1]}</span></div>`;
+    for(const s of M.sheets.filter(s=>s.group===g)){
+      const b=document.createElement('button'); b.className='sheet'; b.dataset.num=s.num;
+      b.innerHTML=`<span class="tick"></span>${s.he}<small>${s.en} · sheet ${s.num}</small>`;
+      b.onclick=()=>toggleSheet(s.num); gd.appendChild(b);
+    }
+    list.appendChild(gd);
+  }
+  const cmpSel=document.getElementById('compare');
+  for(const s of M.sheets){ const o=document.createElement('option'); o.value=s.num; o.textContent=`${s.he} — ${s.en}`; cmpSel.appendChild(o); }
+
+  function defaultShown(sheet){ const sh={scan:false}; for(const c of sheet.classes) sh[c.key]=true; return sh; }
+
+  function renderStack(){
+    const box=document.getElementById('stack'); box.innerHTML='';
+    for(const num of S.active){
+      const sheet=sheetByNum(num), shown=S.shown[num];
+      const d=document.createElement('div'); d.className='block';
+      d.innerHTML=`<div class="bh"><span>${sheet.he}</span><span class="en">${sheet.en}</span><span class="x" data-num="${num}">הסר · remove</span></div>`;
+      if(sheet.legend_img){ const im=document.createElement('img'); im.className='legend-img'; im.src=sheet.legend_img; im.title='click to enlarge'; im.onclick=()=>im.classList.toggle('big'); d.appendChild(im); }
+      const ab=document.createElement('details'); ab.className='about';
+      const conf=sheet.confidence||''; 
+      ab.innerHTML=`<summary>על הגיליון · about this sheet <span class="conf ${conf}">reading: ${conf}</span></summary>
+        <dl>
+          <dt>מזהה</dt><dd style="direction:ltr;text-align:left">${sheet.identifier||''}</dd>
+          <dt>כותרת</dt><dd>${sheet.he} <span class="en">${sheet.translit||''}</span></dd>
+          <dt>תיאור</dt><dd><span class="en">${sheet.description||''}</span></dd>
+          ${sheet.reading_notes?`<dt>הערות קריאה</dt><dd><span class="en">${sheet.reading_notes}</span></dd>`:''}
+          <dt>תקופה</dt><dd style="direction:ltr;text-align:left">${sheet.coverage_temporal||''}</dd>
+          ${sheet.relation?`<dt>קשרים</dt><dd style="direction:ltr;text-align:left">${sheet.relation}</dd>`:''}
+          <dt>מקור</dt><dd style="direction:ltr;text-align:left">${sheet.scan||''} (${(sheet.scan_size||[]).join('×')} px)</dd>
+          <dt>גאורפרנס</dt><dd style="direction:ltr;text-align:left"><a href="${sheet.georef||''}" target="_blank">IIIF georeference annotation</a></dd>
+        </dl>`;
+      d.appendChild(ab);
+      const rows=[{key:'scan',he:'הסריקה המלאה',en:'full scan',sw:'sw scan'}, ...sheet.classes.map(c=>({key:c.key,he:c.he,en:c.en,sw:'sw '+c.kind,color:c.color,quality:c.quality,notes:c.notes}))];
+      for(const r of rows){
+        const row=document.createElement('div'); row.className='row';
+        row.innerHTML=`<label><input type="checkbox" ${shown[r.key]?'checked':''}><span class="${r.sw}" style="${r.color?'background:'+r.color:''}"></span><span>${r.he}</span><span class="en">${r.en}</span>${r.quality&&r.quality!=='good'?`<span class="qual" title="${r.notes||''}">${r.quality}</span>`:''}</label>`;
+        row.querySelector('input').onchange=e=>{ shown[r.key]=e.target.checked; syncA(); };
+        d.appendChild(row);
+      }
+      d.querySelector('.x').onclick=()=>toggleSheet(num);
+      box.appendChild(d);
+    }
+    const bf=document.getElementById('basefrom'); bf.innerHTML='';
+    for(const num of S.active){ const o=document.createElement('option'); o.value=num; o.textContent=sheetByNum(num).he; bf.appendChild(o); }
+    if(!S.active.includes(S.baseFrom)) S.baseFrom=S.active[0]||null;
+    if(S.baseFrom) bf.value=S.baseFrom;
+    document.querySelectorAll('.sheet').forEach(b=>b.classList.toggle('active',S.active.includes(b.dataset.num)));
+    note();
+  }
+  async function toggleSheet(num){
+    if(S.active.includes(num)) S.active=S.active.filter(n=>n!==num);
+    else { S.active.push(num); if(!S.shown[num]) S.shown[num]=defaultShown(sheetByNum(num)); }
+    renderStack(); await syncA();
+  }
+  document.getElementById('basechk').onchange=e=>{ S.baseOn=e.target.checked; syncA(); };
+  document.getElementById('basefrom').onchange=e=>{ S.baseFrom=e.target.value; syncA(); };
+  document.getElementById('opacity').oninput=e=>{ S.opacity=+e.target.value; for(const st of [S.layersA,S.layersB]) for(const k in st) st[k].setOpacity(S.opacity); };
+  document.querySelectorAll('#mode button').forEach(b=>b.onclick=async()=>{
+    document.querySelectorAll('#mode button').forEach(x=>x.classList.remove('on')); b.classList.add('on'); S.mode=b.dataset.m;
+    await syncA(); await mountB();
+  });
+
+  // ---------- compare / swipe
+  const swipe=document.getElementById('swipe'); let ratio=0.5, dragging=false;
+  cmpSel.onchange=async e=>{ S.cmp=e.target.value||null; await mountB(); swipe.style.display=S.cmp?'block':'none'; clip(); };
+  function clip(){
+    const A=map.getPane('sheetA'), B=map.getPane('sheetB');
+    if(!S.cmp){ A.style.clip=''; B.style.clip=''; return; }
+    const nw=map.containerPointToLayerPoint([0,0]), se=map.containerPointToLayerPoint(map.getSize());
+    const x=nw.x+(se.x-nw.x)*ratio;
+    A.style.clip=`rect(${nw.y}px, ${x}px, ${se.y}px, ${nw.x}px)`;
+    B.style.clip=`rect(${nw.y}px, ${se.x}px, ${se.y}px, ${x}px)`;
+    swipe.style.left=(map.getSize().x*ratio)+'px';
+  }
+  map.on('move zoom resize',clip);
+  const knob=swipe.querySelector('.knob');
+  knob.addEventListener('pointerdown',e=>{dragging=true; knob.setPointerCapture(e.pointerId); map.dragging.disable();});
+  knob.addEventListener('pointerup',e=>{dragging=false; map.dragging.enable();});
+  knob.addEventListener('pointermove',e=>{ if(!dragging) return; const r=map.getContainer().getBoundingClientRect(); ratio=Math.min(.98,Math.max(.02,(e.clientX-r.left)/r.width)); clip(); });
+
+  const C=M.collection||{};
+  document.getElementById('creator').innerHTML=`${C.creator||''} · <span style="direction:ltr;display:inline-block">${C.creator_en||''}</span>${C.creator_wikidata?` · <a href="https://www.wikidata.org/wiki/${C.creator_wikidata}" target="_blank" style="color:inherit">${C.creator_wikidata}</a>`:''}`;
+  function note(){
+    const n=document.getElementById('note');
+    n.innerHTML=`<div style="margin-bottom:8px">${C.rights||''}${C.license&&C.license!=='TBD'?` · ${C.license}`:''} · <a href="provenance.json" target="_blank" style="color:inherit">provenance</a> · <a href="catalogue/sheets.csv" target="_blank" style="color:inherit">catalogue</a></div>`+`כל צבע שסומן בגיליון הופרד לשכבה משלו; הצבעים הם הפיגמנטים כפי שנקראו מהשקופית. אפשר לערום גיליונות זה על זה; קווי הבסיס מצוירים פעם אחת בלבד.
+      <br><span style="direction:ltr;display:block;text-align:left;margin-top:6px">Each marker colour on a sheet is its own layer; swatches are the pigments as read from the slide. Sheets stack; the base linework is drawn once. “Flat colour” repaints a layer in one colour to make it readable; “as drawn” keeps his hand.</span>`;
+  }
+  await toggleSheet(M.sheets[0].num);
+})();
+</script>
+</body>
+</html>

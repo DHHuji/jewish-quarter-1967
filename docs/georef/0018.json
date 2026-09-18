@@ -1,0 +1,130 @@
+{
+ "@context": [
+  "http://iiif.io/api/extension/georef/1/context.json",
+  "http://iiif.io/api/presentation/3/context.json"
+ ],
+ "id": "georef/0018.json",
+ "type": "Annotation",
+ "motivation": "georeferencing",
+ "target": {
+  "type": "SpecificResource",
+  "source": {
+   "id": "scans/Jewish Quarter Jerusalem0018.JPG",
+   "type": "Image",
+   "format": "image/jpeg",
+   "width": 1200,
+   "height": 1923
+  },
+  "selector": {
+   "type": "SvgSelector",
+   "value": "<svg width=\"1200\" height=\"1923\"><polygon points=\"0,15 1199,15 1199,1720 0,1720\" /></svg>"
+  }
+ },
+ "body": {
+  "type": "FeatureCollection",
+  "transformation": {
+   "type": "polynomial",
+   "options": {
+    "order": 1
+   }
+  },
+  "features": [
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      1078.1,
+      1613.5
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      35.235287,
+      31.778017
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      890.7,
+      245.0
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      35.228081,
+      31.77607
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      232.3,
+      68.7
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      35.2277425,
+      31.772911
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      601.5,
+      1408.2
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      35.2346228,
+      31.7756683
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      161.7,
+      408.0
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      35.229638,
+      31.772857
+     ]
+    }
+   },
+   {
+    "type": "Feature",
+    "properties": {
+     "resourceCoords": [
+      437.2,
+      1296.4
+     ]
+    },
+    "geometry": {
+     "type": "Point",
+     "coordinates": [
+      35.234173,
+      31.774826
+     ]
+    }
+   }
+  ]
+ }
+}

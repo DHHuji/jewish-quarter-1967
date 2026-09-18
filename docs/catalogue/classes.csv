@@ -1,0 +1,43 @@
+identifier,sheet,key,legend_he,legend_en,kind,pigment_seed,separation_quality,notes
+JQ1967-0008/vehicle,0008,vehicle,רכב,Vehicles,line,#b55b54,good,
+JQ1967-0008/ped_main,0008,ped_main,הולכי רגל (ראשי),"Pedestrians, main",line,#c87856,good,
+JQ1967-0008/ped_sec,0008,ped_sec,הולכי רגל (משני),"Pedestrians, secondary",line,#dfae6d,good,
+JQ1967-0013/h34,0013,h34,3–4 קומות,3–4 floors,fill,#b5453a,good,
+JQ1967-0013/h23,0013,h23,2–3 קומות,2–3 floors,fill,#ebb95e,good,
+JQ1967-0013/h12,0013,h12,1–2 קומות,1–2 floors,fill,#f2e3c2,good,His yellow marker used as a light fill reads as a pale cream wash.
+JQ1967-0014/destroyed,0014,destroyed,הרוס,Destroyed,fill,#cc6a3f,good,
+JQ1967-0014/partial,0014,partial,הרוס חלקי,Partly destroyed,fill,#e4b061,good,
+JQ1967-0014/empty,0014,empty,ריק,Empty,fill,#4f606d,good,
+JQ1967-0015/jewish,0015,jewish,רכוש יהודי,Jewish property,fill,#304184,good,
+JQ1967-0015/waqf,0015,waqf,וקף מוסלמי,Muslim waqf,fill,#bd4a3d,good,
+JQ1967-0015/family_waqf,0015,family_waqf,וקף מוסלמי משפחתי,Family Muslim waqf,fill,#ebb95e,good,
+JQ1967-0015/muslim_private,0015,muslim_private,רכוש מוסלמי פרטי,Private Muslim property,fill,#f2e3c2,good,Pale cream wash (his yellow marker).
+JQ1967-0015/church,0015,church,רכוש כנסיות,Church property,line,#5a3f8a,good,"Outline stroke; same pigment family as the navy fills, separated by kind (line vs fill)."
+JQ1967-0015/municipal,0015,municipal,רכוש עיריה או ממשלה,Municipal or government property,fill,#4f6976,good,
+JQ1967-0018/shops,0018,shops,חנויות ובתי מלאכה,Shops and workshops,line,#c0442c,good,
+JQ1967-0016/extent_1929,0016,extent_1929,1929,"Boundary, 1929",line,#d1723e,good,
+JQ1967-0016/extent_1936,0016,extent_1936,1936,"Boundary, 1936",line,#e4b061,good,
+JQ1967-0016/institutions,0016,institutions,מוסדות,Institutions,fill,#7a3b2a,good,
+JQ1967-0019/synagogue,0019,synagogue,בית כנסת,Synagogue,fill,#7a3b2a,good,
+JQ1967-0019/midrash,0019,midrash,בית מדרש,Beit midrash,fill,#ebb95e,good,
+JQ1967-0019/hospital,0019,hospital,בית חולים,Hospital,fill,#f2e3c2,good,Pale cream wash (his yellow marker).
+JQ1967-0019/kotel_route,0019,kotel_route,(מסלול לכותל),(route to the Western Wall),line,#d6813a,good,Not in his legend: the orange loop around the Western Wall prayer area.
+JQ1967-0021/ring_road,0021,ring_road,דרך רכב,Vehicular ring,line,#b74b3b,good,
+JQ1967-0021/ped_spine,0021,ped_spine,צירי הולכי רגל,Pedestrian spines,line,#c9a8c4,good,
+JQ1967-0021/plaza,0021,plaza,כיכרות,Open squares,fill,#7981b8,good,
+JQ1967-0021/descent,0021,descent,ירידה לכותל,Descent to the Western Wall,line,#4a3c6e,good,
+JQ1967-0017/preserve,0017,preserve,לשימור,To preserve,line,#7d97cf,good,
+JQ1967-0017/rehab,0017,rehab,לשיקום,To rehabilitate,line,#9e5448,good,
+JQ1967-0017/special,0017,special,ערך מיוחד,Special value,fill,#b83f1d,good,
+JQ1967-0017/facade,0017,facade,חזית מיוחדת,Special façade,line,#3b3566,medium,Thin navy strokes close to the base-pen colour; partly captured.
+JQ1967-0025/paths,0025,paths,דרכים,Paths,line,#e0b040,good,
+JQ1967-0025/removed,0025,removed,(להריסה),(to be removed),fill,#b0402a,good,
+JQ1967-0028/paths,0028,paths,דרכים ושבילים (צהוב ובז'),Roads and paths (yellow and tan),line,#e4c878,medium,Yellow paths and tan road bands merged: not separable in the scan.
+JQ1967-0028/gardens,0028,gardens,גינות,Gardens,fill,#9fbf6a,good,
+JQ1967-0027/p4,0027,p4,4 קומות,4 floors,fill,#2d2649,good,
+JQ1967-0027/p3,0027,p3,3 קומות,3 floors,fill,#9a3a30,good,
+JQ1967-0027/p12,0027,p12,1–2 קומות,1–2 floors,fill,#f2d066,good,
+JQ1967-0031/site,0031,site,אתר,Site outline,line,#2a2a5a,medium,Same pen as the base hatching; separated by stroke weight only.
+JQ1967-0032/parking,0032,parking,חניון,Parking,fill,#c8602a,medium,Orange hatching; yellow route rims partly attracted to this class.
+JQ1967-0032/vehicle,0032,vehicle,רכב,Vehicle route,line,#e0b040,good,
+JQ1967-0032/today,0032,today,מסלול כיום,Current route (dashed),line,#a0503a,good,

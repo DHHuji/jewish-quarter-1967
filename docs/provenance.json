@@ -1,0 +1,4012 @@
+{
+ "@context": {
+  "prov": "http://www.w3.org/ns/prov#"
+ },
+ "records": [
+  {
+   "@id": "layers/0008_vehicle.webp",
+   "@type": "prov:Entity",
+   "sheet": "0008",
+   "class": "vehicle",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0008.JPG",
+    "sha256": "a32d3fd3d5750a239d39af449a23b5bff4d630bfa965b8fee0ecb013737a8e94"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.297626,
+      1.622902,
+      -4891783.2591
+     ],
+     [
+      1.623132,
+      0.296198,
+      -7470925.362294
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#b55b54",
+    "class_fitted": "#b55449",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0008_ped_main.webp",
+   "@type": "prov:Entity",
+   "sheet": "0008",
+   "class": "ped_main",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0008.JPG",
+    "sha256": "a32d3fd3d5750a239d39af449a23b5bff4d630bfa965b8fee0ecb013737a8e94"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.297626,
+      1.622902,
+      -4891783.2591
+     ],
+     [
+      1.623132,
+      0.296198,
+      -7470925.362294
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#c87856",
+    "class_fitted": "#cd764b",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0008_ped_sec.webp",
+   "@type": "prov:Entity",
+   "sheet": "0008",
+   "class": "ped_sec",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0008.JPG",
+    "sha256": "a32d3fd3d5750a239d39af449a23b5bff4d630bfa965b8fee0ecb013737a8e94"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.297626,
+      1.622902,
+      -4891783.2591
+     ],
+     [
+      1.623132,
+      0.296198,
+      -7470925.362294
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#dfae6d",
+    "class_fitted": "#e1ab64",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0008_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0008",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0008.JPG",
+    "sha256": "a32d3fd3d5750a239d39af449a23b5bff4d630bfa965b8fee0ecb013737a8e94"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.297626,
+      1.622902,
+      -4891783.2591
+     ],
+     [
+      1.623132,
+      0.296198,
+      -7470925.362294
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0008_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0008",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0008.JPG",
+    "sha256": "a32d3fd3d5750a239d39af449a23b5bff4d630bfa965b8fee0ecb013737a8e94"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.297626,
+      1.622902,
+      -4891783.2591
+     ],
+     [
+      1.623132,
+      0.296198,
+      -7470925.362294
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0013_h34.webp",
+   "@type": "prov:Entity",
+   "sheet": "0013",
+   "class": "h34",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0013.JPG",
+    "sha256": "d54bd5cce6ac6f8cc00e0398c670dea6f066b1d328fb6e03307009844c688c22"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.320703,
+      1.60478,
+      -4733609.824734
+     ],
+     [
+      1.604985,
+      0.319283,
+      -7485966.173512
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#b5453a",
+    "class_fitted": "#b04a3b",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0013_h23.webp",
+   "@type": "prov:Entity",
+   "sheet": "0013",
+   "class": "h23",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0013.JPG",
+    "sha256": "d54bd5cce6ac6f8cc00e0398c670dea6f066b1d328fb6e03307009844c688c22"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.320703,
+      1.60478,
+      -4733609.824734
+     ],
+     [
+      1.604985,
+      0.319283,
+      -7485966.173512
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#ebb95e",
+    "class_fitted": "#e3ad5d",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0013_h12.webp",
+   "@type": "prov:Entity",
+   "sheet": "0013",
+   "class": "h12",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0013.JPG",
+    "sha256": "d54bd5cce6ac6f8cc00e0398c670dea6f066b1d328fb6e03307009844c688c22"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.320703,
+      1.60478,
+      -4733609.824734
+     ],
+     [
+      1.604985,
+      0.319283,
+      -7485966.173512
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#f2e3c2",
+    "class_fitted": "#f6e4cd",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0013_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0013",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0013.JPG",
+    "sha256": "d54bd5cce6ac6f8cc00e0398c670dea6f066b1d328fb6e03307009844c688c22"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.320703,
+      1.60478,
+      -4733609.824734
+     ],
+     [
+      1.604985,
+      0.319283,
+      -7485966.173512
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0013_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0013",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0013.JPG",
+    "sha256": "d54bd5cce6ac6f8cc00e0398c670dea6f066b1d328fb6e03307009844c688c22"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.320703,
+      1.60478,
+      -4733609.824734
+     ],
+     [
+      1.604985,
+      0.319283,
+      -7485966.173512
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0014_destroyed.webp",
+   "@type": "prov:Entity",
+   "sheet": "0014",
+   "class": "destroyed",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0014.JPG",
+    "sha256": "70ddc2ab884b4d1243ff429f7748fadf959553f1b38b27c453523d9cebb7d7eb"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.334518,
+      1.584986,
+      -4605526.416095
+     ],
+     [
+      1.585175,
+      0.333111,
+      -7459882.287133
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#cc6a3f",
+    "class_fitted": "#c55e31",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0014_partial.webp",
+   "@type": "prov:Entity",
+   "sheet": "0014",
+   "class": "partial",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0014.JPG",
+    "sha256": "70ddc2ab884b4d1243ff429f7748fadf959553f1b38b27c453523d9cebb7d7eb"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.334518,
+      1.584986,
+      -4605526.416095
+     ],
+     [
+      1.585175,
+      0.333111,
+      -7459882.287133
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#e4b061",
+    "class_fitted": "#e8b55d",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0014_empty.webp",
+   "@type": "prov:Entity",
+   "sheet": "0014",
+   "class": "empty",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0014.JPG",
+    "sha256": "70ddc2ab884b4d1243ff429f7748fadf959553f1b38b27c453523d9cebb7d7eb"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.334518,
+      1.584986,
+      -4605526.416095
+     ],
+     [
+      1.585175,
+      0.333111,
+      -7459882.287133
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#4f606d",
+    "class_fitted": "#4e5f6b",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0014_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0014",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0014.JPG",
+    "sha256": "70ddc2ab884b4d1243ff429f7748fadf959553f1b38b27c453523d9cebb7d7eb"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.334518,
+      1.584986,
+      -4605526.416095
+     ],
+     [
+      1.585175,
+      0.333111,
+      -7459882.287133
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0014_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0014",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0014.JPG",
+    "sha256": "70ddc2ab884b4d1243ff429f7748fadf959553f1b38b27c453523d9cebb7d7eb"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.334518,
+      1.584986,
+      -4605526.416095
+     ],
+     [
+      1.585175,
+      0.333111,
+      -7459882.287133
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_jewish.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "jewish",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#304184",
+    "class_fitted": "#2d3670",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_waqf.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "waqf",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#bd4a3d",
+    "class_fitted": "#b04a43",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_family_waqf.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "family_waqf",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#ebb95e",
+    "class_fitted": "#f1ca70",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_muslim_private.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "muslim_private",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#f2e3c2",
+    "class_fitted": "#e2bd93",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_church.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "church",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#5a3f8a",
+    "class_fitted": "#57477c",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_municipal.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "municipal",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#4f6976",
+    "class_fitted": "#4f6875",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0015_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0015",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0015.JPG",
+    "sha256": "d1e70946e685636ef365c569d317f9d76bf54da55da06c9e2c5302aac8c9af50"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.315546,
+      1.578085,
+      -4654162.079255
+     ],
+     [
+      1.578287,
+      0.314149,
+      -7362119.772231
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0018_shops.webp",
+   "@type": "prov:Entity",
+   "sheet": "0018",
+   "class": "shops",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0018.JPG",
+    "sha256": "9bff01aca879e0371b8dbb7f298e542a172af9deaa8909245220ad45a9fff588"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.280271,
+      1.617173,
+      -4938453.302561
+     ],
+     [
+      1.617415,
+      0.278852,
+      -7383785.62873
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#c0442c",
+    "class_fitted": "#b54c3c",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0018_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0018",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0018.JPG",
+    "sha256": "9bff01aca879e0371b8dbb7f298e542a172af9deaa8909245220ad45a9fff588"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.280271,
+      1.617173,
+      -4938453.302561
+     ],
+     [
+      1.617415,
+      0.278852,
+      -7383785.62873
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0018_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0018",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0018.JPG",
+    "sha256": "9bff01aca879e0371b8dbb7f298e542a172af9deaa8909245220ad45a9fff588"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.280271,
+      1.617173,
+      -4938453.302561
+     ],
+     [
+      1.617415,
+      0.278852,
+      -7383785.62873
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0016_extent_1929.webp",
+   "@type": "prov:Entity",
+   "sheet": "0016",
+   "class": "extent_1929",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0016.JPG",
+    "sha256": "dc2d7581492582c65b7abd0e3faef01d114fdc31dda67c09e5dd4d437d6f8d74"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.302463,
+      1.637399,
+      -4926943.627174
+     ],
+     [
+      1.637629,
+      0.301022,
+      -7545800.618312
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#d1723e",
+    "class_fitted": "#cf733f",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0016_extent_1936.webp",
+   "@type": "prov:Entity",
+   "sheet": "0016",
+   "class": "extent_1936",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0016.JPG",
+    "sha256": "dc2d7581492582c65b7abd0e3faef01d114fdc31dda67c09e5dd4d437d6f8d74"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.302463,
+      1.637399,
+      -4926943.627174
+     ],
+     [
+      1.637629,
+      0.301022,
+      -7545800.618312
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#e4b061",
+    "class_fitted": "#f3c976",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0016_institutions.webp",
+   "@type": "prov:Entity",
+   "sheet": "0016",
+   "class": "institutions",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0016.JPG",
+    "sha256": "dc2d7581492582c65b7abd0e3faef01d114fdc31dda67c09e5dd4d437d6f8d74"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.302463,
+      1.637399,
+      -4926943.627174
+     ],
+     [
+      1.637629,
+      0.301022,
+      -7545800.618312
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#7a3b2a",
+    "class_fitted": "#69342f",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0016_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0016",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0016.JPG",
+    "sha256": "dc2d7581492582c65b7abd0e3faef01d114fdc31dda67c09e5dd4d437d6f8d74"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.302463,
+      1.637399,
+      -4926943.627174
+     ],
+     [
+      1.637629,
+      0.301022,
+      -7545800.618312
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0016_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0016",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0016.JPG",
+    "sha256": "dc2d7581492582c65b7abd0e3faef01d114fdc31dda67c09e5dd4d437d6f8d74"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.302463,
+      1.637399,
+      -4926943.627174
+     ],
+     [
+      1.637629,
+      0.301022,
+      -7545800.618312
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0019_synagogue.webp",
+   "@type": "prov:Entity",
+   "sheet": "0019",
+   "class": "synagogue",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0019.JPG",
+    "sha256": "c915cce5f2965829e9e9f6aed9c83808129200dd3d5e8794d623c7595f77f8d2"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.285859,
+      1.625304,
+      -4946901.295558
+     ],
+     [
+      1.625544,
+      0.284432,
+      -7436393.649256
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#7a3b2a",
+    "class_fitted": "#774d44",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0019_midrash.webp",
+   "@type": "prov:Entity",
+   "sheet": "0019",
+   "class": "midrash",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0019.JPG",
+    "sha256": "c915cce5f2965829e9e9f6aed9c83808129200dd3d5e8794d623c7595f77f8d2"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.285859,
+      1.625304,
+      -4946901.295558
+     ],
+     [
+      1.625544,
+      0.284432,
+      -7436393.649256
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#ebb95e",
+    "class_fitted": "#f3d79f",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0019_hospital.webp",
+   "@type": "prov:Entity",
+   "sheet": "0019",
+   "class": "hospital",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0019.JPG",
+    "sha256": "c915cce5f2965829e9e9f6aed9c83808129200dd3d5e8794d623c7595f77f8d2"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.285859,
+      1.625304,
+      -4946901.295558
+     ],
+     [
+      1.625544,
+      0.284432,
+      -7436393.649256
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#f2e3c2",
+    "class_fitted": "#f5dec8",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0019_kotel_route.webp",
+   "@type": "prov:Entity",
+   "sheet": "0019",
+   "class": "kotel_route",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0019.JPG",
+    "sha256": "c915cce5f2965829e9e9f6aed9c83808129200dd3d5e8794d623c7595f77f8d2"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.285859,
+      1.625304,
+      -4946901.295558
+     ],
+     [
+      1.625544,
+      0.284432,
+      -7436393.649256
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#d6813a",
+    "class_fitted": "#de814c",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0019_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0019",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0019.JPG",
+    "sha256": "c915cce5f2965829e9e9f6aed9c83808129200dd3d5e8794d623c7595f77f8d2"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.285859,
+      1.625304,
+      -4946901.295558
+     ],
+     [
+      1.625544,
+      0.284432,
+      -7436393.649256
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0019_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0019",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0019.JPG",
+    "sha256": "c915cce5f2965829e9e9f6aed9c83808129200dd3d5e8794d623c7595f77f8d2"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.285859,
+      1.625304,
+      -4946901.295558
+     ],
+     [
+      1.625544,
+      0.284432,
+      -7436393.649256
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0021_ring_road.webp",
+   "@type": "prov:Entity",
+   "sheet": "0021",
+   "class": "ring_road",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0021.JPG",
+    "sha256": "e1769737d965a8504c52ad77e1a421f629ac056a61908dd792695e1f3c12cae9"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.274859,
+      1.519868,
+      -4596388.822612
+     ],
+     [
+      1.520086,
+      0.273523,
+      -6982239.300252
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#b74b3b",
+    "class_fitted": "#c05545",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0021_ped_spine.webp",
+   "@type": "prov:Entity",
+   "sheet": "0021",
+   "class": "ped_spine",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0021.JPG",
+    "sha256": "e1769737d965a8504c52ad77e1a421f629ac056a61908dd792695e1f3c12cae9"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.274859,
+      1.519868,
+      -4596388.822612
+     ],
+     [
+      1.520086,
+      0.273523,
+      -6982239.300252
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#c9a8c4",
+    "class_fitted": "#dec2e5",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0021_plaza.webp",
+   "@type": "prov:Entity",
+   "sheet": "0021",
+   "class": "plaza",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0021.JPG",
+    "sha256": "e1769737d965a8504c52ad77e1a421f629ac056a61908dd792695e1f3c12cae9"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.274859,
+      1.519868,
+      -4596388.822612
+     ],
+     [
+      1.520086,
+      0.273523,
+      -6982239.300252
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#7981b8",
+    "class_fitted": "#7a91d1",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0021_descent.webp",
+   "@type": "prov:Entity",
+   "sheet": "0021",
+   "class": "descent",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0021.JPG",
+    "sha256": "e1769737d965a8504c52ad77e1a421f629ac056a61908dd792695e1f3c12cae9"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.274859,
+      1.519868,
+      -4596388.822612
+     ],
+     [
+      1.520086,
+      0.273523,
+      -6982239.300252
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#4a3c6e",
+    "class_fitted": "#513c61",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0021_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0021",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0021.JPG",
+    "sha256": "e1769737d965a8504c52ad77e1a421f629ac056a61908dd792695e1f3c12cae9"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.274859,
+      1.519868,
+      -4596388.822612
+     ],
+     [
+      1.520086,
+      0.273523,
+      -6982239.300252
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0021_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0021",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0021.JPG",
+    "sha256": "e1769737d965a8504c52ad77e1a421f629ac056a61908dd792695e1f3c12cae9"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.274859,
+      1.519868,
+      -4596388.822612
+     ],
+     [
+      1.520086,
+      0.273523,
+      -6982239.300252
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0017_preserve.webp",
+   "@type": "prov:Entity",
+   "sheet": "0017",
+   "class": "preserve",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0017.JPG",
+    "sha256": "570ea9525bdc64459e327a1612653fc5e772016a4371765a81bde995fb810bfa"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.27632,
+      1.60791,
+      -4919355.467914
+     ],
+     [
+      1.608153,
+      0.27491,
+      -7332719.068851
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#7d97cf",
+    "class_fitted": "#7e95d4",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0017_rehab.webp",
+   "@type": "prov:Entity",
+   "sheet": "0017",
+   "class": "rehab",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0017.JPG",
+    "sha256": "570ea9525bdc64459e327a1612653fc5e772016a4371765a81bde995fb810bfa"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.27632,
+      1.60791,
+      -4919355.467914
+     ],
+     [
+      1.608153,
+      0.27491,
+      -7332719.068851
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#9e5448",
+    "class_fitted": "#8c504c",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0017_special.webp",
+   "@type": "prov:Entity",
+   "sheet": "0017",
+   "class": "special",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0017.JPG",
+    "sha256": "570ea9525bdc64459e327a1612653fc5e772016a4371765a81bde995fb810bfa"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.27632,
+      1.60791,
+      -4919355.467914
+     ],
+     [
+      1.608153,
+      0.27491,
+      -7332719.068851
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#b83f1d",
+    "class_fitted": "#b64230",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0017_facade.webp",
+   "@type": "prov:Entity",
+   "sheet": "0017",
+   "class": "facade",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0017.JPG",
+    "sha256": "570ea9525bdc64459e327a1612653fc5e772016a4371765a81bde995fb810bfa"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.27632,
+      1.60791,
+      -4919355.467914
+     ],
+     [
+      1.608153,
+      0.27491,
+      -7332719.068851
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#3b3566",
+    "class_fitted": "#565386",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0017_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0017",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0017.JPG",
+    "sha256": "570ea9525bdc64459e327a1612653fc5e772016a4371765a81bde995fb810bfa"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.27632,
+      1.60791,
+      -4919355.467914
+     ],
+     [
+      1.608153,
+      0.27491,
+      -7332719.068851
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0017_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0017",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0017.JPG",
+    "sha256": "570ea9525bdc64459e327a1612653fc5e772016a4371765a81bde995fb810bfa"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.27632,
+      1.60791,
+      -4919355.467914
+     ],
+     [
+      1.608153,
+      0.27491,
+      -7332719.068851
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0025_paths.webp",
+   "@type": "prov:Entity",
+   "sheet": "0025",
+   "class": "paths",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0025.JPG",
+    "sha256": "a0010b220a91564d5b2f04e6fe1b6dce9def6da5021b1aa431d33d52c61acc3b"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.321595,
+      1.561636,
+      -4569022.41459
+     ],
+     [
+      1.561636,
+      0.321595,
+      -7324559.830164
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#e0b040",
+    "class_fitted": "#dbaf6c",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0025_removed.webp",
+   "@type": "prov:Entity",
+   "sheet": "0025",
+   "class": "removed",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0025.JPG",
+    "sha256": "a0010b220a91564d5b2f04e6fe1b6dce9def6da5021b1aa431d33d52c61acc3b"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.321595,
+      1.561636,
+      -4569022.41459
+     ],
+     [
+      1.561636,
+      0.321595,
+      -7324559.830164
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#b0402a",
+    "class_fitted": "#9e454b",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0025_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0025",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0025.JPG",
+    "sha256": "a0010b220a91564d5b2f04e6fe1b6dce9def6da5021b1aa431d33d52c61acc3b"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.321595,
+      1.561636,
+      -4569022.41459
+     ],
+     [
+      1.561636,
+      0.321595,
+      -7324559.830164
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0025_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0025",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0025.JPG",
+    "sha256": "a0010b220a91564d5b2f04e6fe1b6dce9def6da5021b1aa431d33d52c61acc3b"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.321595,
+      1.561636,
+      -4569022.41459
+     ],
+     [
+      1.561636,
+      0.321595,
+      -7324559.830164
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0028_paths.webp",
+   "@type": "prov:Entity",
+   "sheet": "0028",
+   "class": "paths",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0028.JPG",
+    "sha256": "fe6cc309fced6ca9a1adbe8ec9a3430a17a9e5847dcb4096e28a461b61ca87d8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.292545,
+      1.592516,
+      -4798231.18133
+     ],
+     [
+      1.592516,
+      0.292545,
+      -7337223.614657
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#e4c878",
+    "class_fitted": "#e4c478",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0028_gardens.webp",
+   "@type": "prov:Entity",
+   "sheet": "0028",
+   "class": "gardens",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0028.JPG",
+    "sha256": "fe6cc309fced6ca9a1adbe8ec9a3430a17a9e5847dcb4096e28a461b61ca87d8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.292545,
+      1.592516,
+      -4798231.18133
+     ],
+     [
+      1.592516,
+      0.292545,
+      -7337223.614657
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#9fbf6a",
+    "class_fitted": "#e6e4ae",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0028_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0028",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0028.JPG",
+    "sha256": "fe6cc309fced6ca9a1adbe8ec9a3430a17a9e5847dcb4096e28a461b61ca87d8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.292545,
+      1.592516,
+      -4798231.18133
+     ],
+     [
+      1.592516,
+      0.292545,
+      -7337223.614657
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0028_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0028",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0028.JPG",
+    "sha256": "fe6cc309fced6ca9a1adbe8ec9a3430a17a9e5847dcb4096e28a461b61ca87d8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.292545,
+      1.592516,
+      -4798231.18133
+     ],
+     [
+      1.592516,
+      0.292545,
+      -7337223.614657
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0027_p4.webp",
+   "@type": "prov:Entity",
+   "sheet": "0027",
+   "class": "p4",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0027.JPG",
+    "sha256": "f927ffd4e5c8ed02e795a6a9350f467aa54edf334b850a034d847ddb750884e8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.316039,
+      1.572577,
+      -4631641.198287
+     ],
+     [
+      1.572577,
+      0.316039,
+      -7346719.124053
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#2d2649",
+    "class_fitted": "#403363",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0027_p3.webp",
+   "@type": "prov:Entity",
+   "sheet": "0027",
+   "class": "p3",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0027.JPG",
+    "sha256": "f927ffd4e5c8ed02e795a6a9350f467aa54edf334b850a034d847ddb750884e8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.316039,
+      1.572577,
+      -4631641.198287
+     ],
+     [
+      1.572577,
+      0.316039,
+      -7346719.124053
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#9a3a30",
+    "class_fitted": "#993737",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0027_p12.webp",
+   "@type": "prov:Entity",
+   "sheet": "0027",
+   "class": "p12",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0027.JPG",
+    "sha256": "f927ffd4e5c8ed02e795a6a9350f467aa54edf334b850a034d847ddb750884e8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.316039,
+      1.572577,
+      -4631641.198287
+     ],
+     [
+      1.572577,
+      0.316039,
+      -7346719.124053
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#f2d066",
+    "class_fitted": "#dcb46e",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0027_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0027",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0027.JPG",
+    "sha256": "f927ffd4e5c8ed02e795a6a9350f467aa54edf334b850a034d847ddb750884e8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.316039,
+      1.572577,
+      -4631641.198287
+     ],
+     [
+      1.572577,
+      0.316039,
+      -7346719.124053
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0027_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0027",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0027.JPG",
+    "sha256": "f927ffd4e5c8ed02e795a6a9350f467aa54edf334b850a034d847ddb750884e8"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.316039,
+      1.572577,
+      -4631641.198287
+     ],
+     [
+      1.572577,
+      0.316039,
+      -7346719.124053
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0031_site.webp",
+   "@type": "prov:Entity",
+   "sheet": "0031",
+   "class": "site",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0031.JPG",
+    "sha256": "50187c167d4cceba680cafae160a0a031ad7a96056418ef3a6d9a247a75b2a07"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.352387,
+      1.793399,
+      -5313673.554329
+     ],
+     [
+      1.793399,
+      0.352387,
+      -8348388.28928
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {
+     "thick_k": 5,
+     "fill_base_handicap": 0.0,
+     "line_base_handicap": 0.0,
+     "thick_from_dark": 0.5
+    },
+    "class_seed": "#2a2a5a",
+    "class_fitted": "#2a2a5a",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0031_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0031",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0031.JPG",
+    "sha256": "50187c167d4cceba680cafae160a0a031ad7a96056418ef3a6d9a247a75b2a07"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.352387,
+      1.793399,
+      -5313673.554329
+     ],
+     [
+      1.793399,
+      0.352387,
+      -8348388.28928
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {
+     "thick_k": 5,
+     "fill_base_handicap": 0.0,
+     "line_base_handicap": 0.0,
+     "thick_from_dark": 0.5
+    },
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0031_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0031",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0031.JPG",
+    "sha256": "50187c167d4cceba680cafae160a0a031ad7a96056418ef3a6d9a247a75b2a07"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.352387,
+      1.793399,
+      -5313673.554329
+     ],
+     [
+      1.793399,
+      0.352387,
+      -8348388.28928
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {
+     "thick_k": 5,
+     "fill_base_handicap": 0.0,
+     "line_base_handicap": 0.0,
+     "thick_from_dark": 0.5
+    },
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0032_parking.webp",
+   "@type": "prov:Entity",
+   "sheet": "0032",
+   "class": "parking",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0032.JPG",
+    "sha256": "512e9362ac8d1d272cc13d4145f1b02f12834d3d3b41a33567bcff68d21110e0"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.345899,
+      1.664091,
+      -4856292.951142
+     ],
+     [
+      1.664091,
+      0.345899,
+      -7817151.579444
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#c8602a",
+    "class_fitted": "#c17143",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0032_vehicle.webp",
+   "@type": "prov:Entity",
+   "sheet": "0032",
+   "class": "vehicle",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0032.JPG",
+    "sha256": "512e9362ac8d1d272cc13d4145f1b02f12834d3d3b41a33567bcff68d21110e0"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.345899,
+      1.664091,
+      -4856292.951142
+     ],
+     [
+      1.664091,
+      0.345899,
+      -7817151.579444
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#e0b040",
+    "class_fitted": "#ecbf72",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0032_today.webp",
+   "@type": "prov:Entity",
+   "sheet": "0032",
+   "class": "today",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0032.JPG",
+    "sha256": "512e9362ac8d1d272cc13d4145f1b02f12834d3d3b41a33567bcff68d21110e0"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "colour separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.345899,
+      1.664091,
+      -4856292.951142
+     ],
+     [
+      1.664091,
+      0.345899,
+      -7817151.579444
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": "#a0503a",
+    "class_fitted": "#a04b3a",
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0032_base.webp",
+   "@type": "prov:Entity",
+   "sheet": "0032",
+   "class": "base",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0032.JPG",
+    "sha256": "512e9362ac8d1d272cc13d4145f1b02f12834d3d3b41a33567bcff68d21110e0"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "linework separation + affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.345899,
+      1.664091,
+      -4856292.951142
+     ],
+     [
+      1.664091,
+      0.345899,
+      -7817151.579444
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  },
+  {
+   "@id": "layers/0032_scan.webp",
+   "@type": "prov:Entity",
+   "sheet": "0032",
+   "class": "scan",
+   "prov:wasDerivedFrom": {
+    "@id": "scans/Jewish Quarter Jerusalem0032.JPG",
+    "sha256": "512e9362ac8d1d272cc13d4145f1b02f12834d3d3b41a33567bcff68d21110e0"
+   },
+   "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "activity": "affine warp",
+    "transform_merc_to_pixel": [
+     [
+      -0.345899,
+      1.664091,
+      -4856292.951142
+     ],
+     [
+      1.664091,
+      0.345899,
+      -7817151.579444
+     ]
+    ],
+    "frame": {
+     "res_m": 0.6,
+     "bounds_wgs84": [
+      [
+       31.771596035125267,
+       35.226451975937806
+      ],
+      [
+       31.77887154824895,
+       35.23700780192417
+      ]
+     ],
+     "size_px": [
+      1959,
+      1588
+     ]
+    },
+    "parameters": {},
+    "class_seed": null,
+    "class_fitted": null,
+    "software": {
+     "python": "3.12.4",
+     "opencv": "4.10.0",
+     "numpy": "1.26.4",
+     "pipeline": "jewish-quarter-1967/pipeline"
+    },
+    "prov:endedAtTime": "2026-09-18T19:15:14+03:00",
+    "prov:wasAssociatedWith": [
+     "Claude (Anthropic) — pipeline author",
+     "Yael Netzer — curator"
+    ]
+   }
+  }
+ ]
+}

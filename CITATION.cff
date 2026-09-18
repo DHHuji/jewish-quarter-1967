@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this dataset or atlas, please cite it as below."
+title: "The Jewish Quarter, 1967 — Ehud Netzer's planning sheets"
+type: dataset
+authors:
+  - family-names: Netzer
+    given-names: Ehud
+    orcid: ""
+  - family-names: Netzer
+    given-names: Yael
+date-released: "2026-09-18"
+keywords: [Jerusalem, Jewish Quarter, 1967, urban planning, historical maps, georeferencing, IIIF, Allmaps]
+license: "see LICENSE"
+repository-code: "https://github.com/DHHuji/jewish-quarter-1967"
