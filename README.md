@@ -21,6 +21,7 @@ catalogue/      sheets.csv  — one record per scan (Dublin‑Core‑shaped; see
                 classes.csv — one record per legend entry (colour class) on each sheet
 georef/         NNNN.json   — one IIIF Georeference (Allmaps) annotation per sheet: control points + image mask
 provenance.json one PROV‑style record per derived file: source scan (sha256), transform, parameters, software, time
+datapackage.json Frictionless Data package: every data file with schema, licence, last‑updated date and its download name
 pipeline/       the derivation: sheets.py (processing register), separate.py (colour separation),
                 georef.py + sheet_transforms.json (georeferencing), build.py (writes docs/)
 docs/           the published site: index.html, manifest.json, layers/, legends/, tiles/, reference.geojson,

@@ -61,6 +61,46 @@ def georef_annotation(num,cat,paper_box):
                       "selector":{"type":"SvgSelector","value":f"<svg width=\"{W}\" height=\"{H}\"><polygon points=\"{x0},{y0} {x1},{y0} {x1},{y1} {x0},{y1}\" /></svg>"}},
             "body":{"type":"FeatureCollection","transformation":{"type":"polynomial","options":{"order":1}},"features":feats}}
 
+PROJECT="jewish-quarter-1967"
+def last_updated(relpath):
+    """Date a data file last changed: its last git commit date, or today if it has uncommitted changes / no history."""
+    import subprocess
+    try:
+        dirty=subprocess.run(["git","status","--porcelain","--",relpath],cwd=ROOT,capture_output=True,text=True).stdout.strip()
+        if dirty: return datetime.date.today().isoformat()
+        d=subprocess.run(["git","log","-1","--format=%cs","--",relpath],cwd=ROOT,capture_output=True,text=True).stdout.strip()
+        return d or datetime.date.today().isoformat()
+    except Exception: return datetime.date.today().isoformat()
+def dl_name(content,ext,date): return f"{PROJECT}_{content}_{date}.{ext}"
+def write_datapackage(manifest):
+    """Frictionless Data package describing every downloadable data file, with provenance-carrying file names."""
+    C=manifest["collection"]; today=datetime.date.today().isoformat()
+    def res(path,name,content,ext,title,desc,fmt,extra=None):
+        d=last_updated(path); r=dict(name=name,path=path,title=title,description=desc,format=fmt,updated=d,download=dl_name(content,ext,d),
+                                  bytes=os.path.getsize(f"{ROOT}/{path}") if os.path.exists(f"{ROOT}/{path}") else None)
+        if extra: r.update(extra); return r
+    sheets_fields=[dict(name=n) for n in next(csv.reader(open(f"{ROOT}/catalogue/sheets.csv",encoding="utf-8")))]
+    classes_fields=[dict(name=n) for n in next(csv.reader(open(f"{ROOT}/catalogue/classes.csv",encoding="utf-8")))]
+    resources=[
+      res("catalogue/sheets.csv","catalogue-sheets","catalogue-sheets","csv","Sheet catalogue","One record per scan (Dublin-Core-shaped): titles as written, transliteration, translation, reading confidence, creator, dates, coverage, relations, rights.","csv",dict(mediatype="text/csv",encoding="utf-8",schema=dict(fields=sheets_fields))),
+      res("catalogue/classes.csv","catalogue-classes","catalogue-classes","csv","Legend-class catalogue","One record per legend entry (colour class) on each sheet: legend as written, translation, kind, pigment seed, separation quality, notes.","csv",dict(mediatype="text/csv",encoding="utf-8",schema=dict(fields=classes_fields))),
+      res("provenance.json","provenance","provenance","json","Provenance","One PROV-shaped record per derived layer: source scan (sha256), transform, parameters, software, time, agents.","json",dict(mediatype="application/json")),
+      res("docs/manifest.json","manifest","atlas-manifest","json","Atlas manifest","Machine-readable catalogue read by the web atlas: sheets, classes, fitted colours, bounds.","json",dict(mediatype="application/json")),
+      res("docs/reference.geojson","reference","osm-reference","geojson","Reference geometry","City walls, Temple Mount and landmarks from OpenStreetMap (ODbL), used for georeferencing.","geojson",dict(mediatype="application/geo+json",licenses=[dict(name="ODbL-1.0",title="Open Database License",path="https://opendatacommons.org/licenses/odbl/")])),
+    ]
+    for s in manifest["sheets"]:
+        resources.append(res(f"georef/{s['num']}.json",f"georef-{s['num']}",f"georef-{s['num']}","json",f"Georeference annotation, sheet {s['num']}",f"IIIF Georeference (Allmaps) annotation for {s['identifier']}: control points and paper mask.","json",dict(mediatype="application/json")))
+    pkg=dict(name=PROJECT,title=C["title_en"],title_he=C["title_he"],
+             description="Ehud Netzer's 1967 planning sheets for the Jewish Quarter of Jerusalem: catalogue, georeferencing, colour-separated layers, provenance.",
+             version=today,created="2026-09-18",updated=today,
+             homepage="https://dhhuji.github.io/jewish-quarter-1967/",repository="https://github.com/DHHuji/jewish-quarter-1967",
+             contributors=[dict(title=C["creator_en"],role="author",path=f"https://www.wikidata.org/wiki/{C['creator_wikidata']}"),dict(title="Yael Netzer",role="maintainer")],
+             licenses=[dict(name="see-LICENSE",title=C["rights"]+"; licence "+C["license"])],
+             resources=resources)
+    json.dump(pkg,open(f"{ROOT}/datapackage.json","w"),ensure_ascii=False,indent=1)
+    json.dump(pkg,open(f"{DOCS}/datapackage.json","w"),ensure_ascii=False,indent=1)
+    manifest["downloads"]={r["name"]:dict(path=r["path"].replace("docs/",""),download=r["download"],updated=r["updated"]) for r in resources}
+    json.dump(manifest,open(f"{DOCS}/manifest.json","w"),ensure_ascii=False,indent=1)
 def main(only=None):
     cat,catc=read_catalogue()
     for d in ("layers","legends"): os.makedirs(f"{DOCS}/{d}",exist_ok=True)
@@ -131,6 +171,7 @@ def main(only=None):
     for d in ("georef","catalogue"):
         os.makedirs(f"{DOCS}/{d}",exist_ok=True)
         for f in os.listdir(f"{ROOT}/{d}"): shutil.copy(f"{ROOT}/{d}/{f}",f"{DOCS}/{d}/{f}")
+    write_datapackage(manifest)
     feats=[dict(type="Feature",properties=dict(name=name,source="OpenStreetMap, ODbL"),geometry=dict(type="LineString",coordinates=[[inv_merc(*p)[1],inv_merc(*p)[0]] for p in pts])) for name,pts in ref_lines]
     json.dump(dict(type="FeatureCollection",features=feats),open(f"{DOCS}/reference.geojson","w"))
     print("done")

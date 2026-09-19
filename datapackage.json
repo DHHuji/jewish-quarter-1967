@@ -1,0 +1,373 @@
+{
+ "name": "jewish-quarter-1967",
+ "title": "The Jewish Quarter, 1967 — Ehud Netzer's planning sheets",
+ "title_he": "הרובע היהודי 1967 — גיליונות התכנון של אהוד נצר",
+ "description": "Ehud Netzer's 1967 planning sheets for the Jewish Quarter of Jerusalem: catalogue, georeferencing, colour-separated layers, provenance.",
+ "version": "2026-09-19",
+ "created": "2026-09-18",
+ "updated": "2026-09-19",
+ "homepage": "https://dhhuji.github.io/jewish-quarter-1967/",
+ "repository": "https://github.com/DHHuji/jewish-quarter-1967",
+ "contributors": [
+  {
+   "title": "Ehud Netzer (born Menczel), 1934–2010",
+   "role": "author",
+   "path": "https://www.wikidata.org/wiki/Q573909"
+  },
+  {
+   "title": "Yael Netzer",
+   "role": "maintainer"
+  }
+ ],
+ "licenses": [
+  {
+   "name": "see-LICENSE",
+   "title": "© Estate of Ehud Netzer; digitised and curated by Yael Netzer; licence TBD"
+  }
+ ],
+ "resources": [
+  {
+   "name": "catalogue-sheets",
+   "path": "catalogue/sheets.csv",
+   "title": "Sheet catalogue",
+   "description": "One record per scan (Dublin-Core-shaped): titles as written, transliteration, translation, reading confidence, creator, dates, coverage, relations, rights.",
+   "format": "csv",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_catalogue-sheets_2026-09-18.csv",
+   "bytes": 12969,
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "identifier"
+     },
+     {
+      "name": "scan_file"
+     },
+     {
+      "name": "scan_width_px"
+     },
+     {
+      "name": "scan_height_px"
+     },
+     {
+      "name": "sheet"
+     },
+     {
+      "name": "has_layers"
+     },
+     {
+      "name": "group"
+     },
+     {
+      "name": "sequence"
+     },
+     {
+      "name": "title_he"
+     },
+     {
+      "name": "title_translit"
+     },
+     {
+      "name": "title_en"
+     },
+     {
+      "name": "title_reading_confidence"
+     },
+     {
+      "name": "reading_notes"
+     },
+     {
+      "name": "creator"
+     },
+     {
+      "name": "creator_en"
+     },
+     {
+      "name": "creator_wikidata"
+     },
+     {
+      "name": "date_created"
+     },
+     {
+      "name": "coverage_temporal"
+     },
+     {
+      "name": "coverage_spatial"
+     },
+     {
+      "name": "language"
+     },
+     {
+      "name": "type"
+     },
+     {
+      "name": "type_aat"
+     },
+     {
+      "name": "medium"
+     },
+     {
+      "name": "support"
+     },
+     {
+      "name": "source_format"
+     },
+     {
+      "name": "description_en"
+     },
+     {
+      "name": "description_he"
+     },
+     {
+      "name": "relation"
+     },
+     {
+      "name": "rights"
+     },
+     {
+      "name": "license"
+     }
+    ]
+   }
+  },
+  {
+   "name": "catalogue-classes",
+   "path": "catalogue/classes.csv",
+   "title": "Legend-class catalogue",
+   "description": "One record per legend entry (colour class) on each sheet: legend as written, translation, kind, pigment seed, separation quality, notes.",
+   "format": "csv",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_catalogue-classes_2026-09-18.csv",
+   "bytes": 4272,
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "identifier"
+     },
+     {
+      "name": "sheet"
+     },
+     {
+      "name": "key"
+     },
+     {
+      "name": "legend_he"
+     },
+     {
+      "name": "legend_en"
+     },
+     {
+      "name": "kind"
+     },
+     {
+      "name": "pigment_seed"
+     },
+     {
+      "name": "separation_quality"
+     },
+     {
+      "name": "notes"
+     }
+    ]
+   }
+  },
+  {
+   "name": "provenance",
+   "path": "provenance.json",
+   "title": "Provenance",
+   "description": "One PROV-shaped record per derived layer: source scan (sha256), transform, parameters, software, time, agents.",
+   "format": "json",
+   "updated": "2026-09-19",
+   "download": "jewish-quarter-1967_provenance_2026-09-19.json",
+   "bytes": 85902,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "manifest",
+   "path": "docs/manifest.json",
+   "title": "Atlas manifest",
+   "description": "Machine-readable catalogue read by the web atlas: sheets, classes, fitted colours, bounds.",
+   "format": "json",
+   "updated": "2026-09-19",
+   "download": "jewish-quarter-1967_atlas-manifest_2026-09-19.json",
+   "bytes": 26688,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "reference",
+   "path": "docs/reference.geojson",
+   "title": "Reference geometry",
+   "description": "City walls, Temple Mount and landmarks from OpenStreetMap (ODbL), used for georeferencing.",
+   "format": "geojson",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_osm-reference_2026-09-18.geojson",
+   "bytes": 19684,
+   "mediatype": "application/geo+json",
+   "licenses": [
+    {
+     "name": "ODbL-1.0",
+     "title": "Open Database License",
+     "path": "https://opendatacommons.org/licenses/odbl/"
+    }
+   ]
+  },
+  {
+   "name": "georef-0008",
+   "path": "georef/0008.json",
+   "title": "Georeference annotation, sheet 0008",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0008: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0008_2026-09-18.json",
+   "bytes": 2081,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0013",
+   "path": "georef/0013.json",
+   "title": "Georeference annotation, sheet 0013",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0013: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0013_2026-09-18.json",
+   "bytes": 2080,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0014",
+   "path": "georef/0014.json",
+   "title": "Georeference annotation, sheet 0014",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0014: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0014_2026-09-18.json",
+   "bytes": 2083,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0015",
+   "path": "georef/0015.json",
+   "title": "Georeference annotation, sheet 0015",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0015: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0015_2026-09-18.json",
+   "bytes": 2080,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0018",
+   "path": "georef/0018.json",
+   "title": "Georeference annotation, sheet 0018",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0018: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0018_2026-09-18.json",
+   "bytes": 2080,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0016",
+   "path": "georef/0016.json",
+   "title": "Georeference annotation, sheet 0016",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0016: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0016_2026-09-18.json",
+   "bytes": 2080,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0019",
+   "path": "georef/0019.json",
+   "title": "Georeference annotation, sheet 0019",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0019: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0019_2026-09-18.json",
+   "bytes": 2083,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0021",
+   "path": "georef/0021.json",
+   "title": "Georeference annotation, sheet 0021",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0021: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0021_2026-09-18.json",
+   "bytes": 2078,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0017",
+   "path": "georef/0017.json",
+   "title": "Georeference annotation, sheet 0017",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0017: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0017_2026-09-18.json",
+   "bytes": 2080,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0025",
+   "path": "georef/0025.json",
+   "title": "Georeference annotation, sheet 0025",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0025: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0025_2026-09-18.json",
+   "bytes": 2083,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0028",
+   "path": "georef/0028.json",
+   "title": "Georeference annotation, sheet 0028",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0028: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0028_2026-09-18.json",
+   "bytes": 2081,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0027",
+   "path": "georef/0027.json",
+   "title": "Georeference annotation, sheet 0027",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0027: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0027_2026-09-18.json",
+   "bytes": 2083,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0031",
+   "path": "georef/0031.json",
+   "title": "Georeference annotation, sheet 0031",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0031: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0031_2026-09-18.json",
+   "bytes": 2082,
+   "mediatype": "application/json"
+  },
+  {
+   "name": "georef-0032",
+   "path": "georef/0032.json",
+   "title": "Georeference annotation, sheet 0032",
+   "description": "IIIF Georeference (Allmaps) annotation for JQ1967-0032: control points and paper mask.",
+   "format": "json",
+   "updated": "2026-09-18",
+   "download": "jewish-quarter-1967_georef-0032_2026-09-18.json",
+   "bytes": 2080,
+   "mediatype": "application/json"
+  }
+ ]
+}

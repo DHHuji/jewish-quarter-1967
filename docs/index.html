@@ -15,16 +15,12 @@
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;font-family:-apple-system,"Segoe UI",Helvetica,Arial,"Noto Sans Hebrew",sans-serif;color:var(--ink);background:var(--paper)}
 #map{position:absolute;inset:0;right:var(--panel-w)}
-#panel{position:absolute;top:0;right:0;bottom:0;width:var(--panel-w);background:var(--paper);border-left:1px solid var(--line);overflow-y:auto;padding:14px 16px 24px;box-shadow:-2px 0 12px rgba(0,0,0,.06)}
+#panel{position:absolute;top:0;right:0;bottom:0;width:var(--panel-w);z-index:700;isolation:isolate;transform:translateZ(0);background:var(--paper);border-left:1px solid var(--line);overflow-y:auto;padding:14px 16px 24px;box-shadow:-2px 0 12px rgba(0,0,0,.06)}
 h1{font-size:18px;margin:0 0 2px;font-weight:600;letter-spacing:.2px}
 .sub{font-size:12px;color:var(--ink2);margin:0 0 14px;direction:ltr;text-align:right}
 h2{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink2);margin:18px 0 8px;font-weight:600}
 .group{margin-bottom:6px}
 .group .gname{font-size:12px;color:var(--ink2);margin:6px 0 4px}
-.sheet{display:block;width:100%;text-align:right;border:1px solid transparent;background:transparent;padding:6px 8px;border-radius:6px;cursor:pointer;font:inherit;color:var(--ink);font-size:14px;line-height:1.25}
-.sheet small{display:block;font-size:11px;color:var(--ink2);direction:ltr;text-align:right}
-.sheet:hover{background:var(--paper2)}
-.sheet.active{background:#fff;border-color:var(--line);box-shadow:0 1px 3px rgba(0,0,0,.06)}
 .legend-img{border:1px solid var(--line);border-radius:6px;background:#fff;display:block}
 .row{display:flex;align-items:center;gap:8px;padding:5px 2px;font-size:13px}
 .row label{flex:1;cursor:pointer;display:flex;align-items:center;gap:8px}
@@ -47,7 +43,48 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
 .leaflet-container{background:var(--paper)}
 .light-tiles{filter:grayscale(1) brightness(1.12) contrast(.82)}
 .legend-img{max-height:110px;width:auto;max-width:100%;margin:6px auto 10px;cursor:zoom-in}
-.legend-img.big{max-height:none;width:100%;cursor:zoom-out}
+#lightbox{position:fixed;inset:0;background:rgba(40,30,50,.75);display:none;align-items:center;justify-content:center;z-index:2000;cursor:zoom-out;padding:24px}
+#lightbox.on{display:flex}
+#lightbox img{max-width:100%;max-height:100%;background:#fff;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.4)}
+#lightbox .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#fff;font-size:13px}
+#modal{position:fixed;inset:0;background:rgba(40,30,50,.55);display:none;align-items:center;justify-content:center;z-index:2000;padding:24px}
+#modal.on{display:flex}
+#modal .box{position:relative;background:var(--paper);color:var(--ink);border-radius:10px;max-width:560px;width:100%;max-height:100%;overflow:auto;padding:22px 26px;box-shadow:0 8px 40px rgba(0,0,0,.35);font-size:14px;line-height:1.55}
+#modal .close{position:absolute;top:10px;left:14px;cursor:pointer;color:var(--ink2);font-size:16px}
+#modal h3{font-size:15px;margin:10px 0 4px}
+#modal .en{direction:ltr;text-align:left}
+#modal ul{padding-right:18px;margin:4px 0 10px} #modal ul.en{padding:0 0 0 18px}
+details.sheet{margin:0 0 2px}
+details.sheet>summary{list-style:none;display:grid;grid-template-columns:auto 1fr auto auto;grid-template-areas:'tick he mini tri' 'tick en en en';align-items:center;column-gap:8px;padding:5px 6px;border-radius:6px;cursor:pointer;font-size:13.5px;line-height:1.25}
+details.sheet>summary::-webkit-details-marker{display:none}
+details.sheet>summary:hover{background:var(--paper2)}
+details.sheet.active>summary{background:#fff;border:1px solid var(--line)}
+details.sheet>summary .tick{grid-area:tick;width:15px;height:15px;border:1px solid var(--ink2);border-radius:3px;background:#fff;cursor:pointer}
+details.sheet.active>summary .tick{background:var(--ink);border-color:var(--ink)}
+details.sheet>summary .he{grid-area:he;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+details.sheet>summary .en{grid-area:en;font-size:11px;color:var(--ink2);direction:ltr;text-align:right}
+details.sheet>summary .mini{grid-area:mini;margin:0}
+details.sheet>summary .tri{grid-area:tri;font-size:10px;color:var(--ink2);transition:transform .15s}
+details.sheet[open]>summary .tri{transform:rotate(-90deg)}
+details.sheet .body{padding:4px 8px 8px 4px;border-right:2px solid var(--line);margin:2px 8px 6px 0}
+details.sheet .body .legend-img{max-height:90px;margin:4px auto 6px}
+.acts{display:flex;gap:10px;font-size:11.5px;color:var(--ink2);align-items:center;flex-wrap:wrap}
+.acts a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--line);cursor:pointer}
+.acts a:hover{border-bottom-style:solid}
+details.group{margin-bottom:4px}
+details.group>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:5px 4px;border-radius:6px;font-size:12.5px;color:var(--ink2)}
+details.group>summary::-webkit-details-marker{display:none}
+details.group>summary:hover{background:var(--paper2)}
+details.group>summary .tri{display:inline-block;transition:transform .15s;font-size:10px}
+details.group[open]>summary .tri{transform:rotate(-90deg)}
+details.group>summary .gname{flex:1;margin:0}
+details.group>summary .cnt{font-size:11px;background:#fff;border:1px solid var(--line);border-radius:9px;padding:0 6px}
+details.block>summary{list-style:none;cursor:pointer}
+details.block>summary::-webkit-details-marker{display:none}
+details.block>summary .tri{display:inline-block;font-size:10px;color:var(--ink2);margin-left:6px;transition:transform .15s}
+details.block[open]>summary .tri{transform:rotate(-90deg)}
+.mini{display:inline-flex;gap:3px;margin-right:auto}
+.mini span{width:10px;height:10px;border-radius:2px;border:1px solid rgba(0,0,0,.15)}
 .creator{font-size:13px;margin:0 0 2px;color:var(--ink)}
 .about{font-size:12px;color:var(--ink2);line-height:1.45;margin:4px 0 8px}
 .about summary{cursor:pointer;color:var(--ink);font-weight:600;font-size:12px}
@@ -57,10 +94,9 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
 .conf{display:inline-block;font-size:10px;padding:1px 6px;border-radius:9px;border:1px solid var(--line);vertical-align:middle;margin-right:4px}
 .conf.high{background:#e8efe3}.conf.medium{background:#f7ecd2}.conf.low{background:#f3dcd6}
 .qual{font-size:10px;color:var(--ink2)}
-.sheet .tick{display:inline-block;width:14px;height:14px;border:1px solid var(--line);border-radius:3px;margin-left:8px;vertical-align:-2px;background:#fff}
-.sheet.active .tick{background:var(--ink);border-color:var(--ink)}
 .block{border:1px solid var(--line);border-radius:8px;background:#fff;padding:8px 10px;margin:8px 0}
-.block .bh{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;margin-bottom:4px}
+.block .bh{display:grid;grid-template-columns:auto 1fr auto auto;grid-template-areas:'tri he mini x' 'tri en en en';align-items:center;column-gap:8px;font-size:13px;font-weight:600;margin-bottom:4px}
+.block .bh .tri{grid-area:tri}.block .bh .he{grid-area:he;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.block .bh .en{grid-area:en;font-weight:400;font-size:11px;color:var(--ink2);direction:ltr;text-align:right}.block .bh .mini{grid-area:mini;margin:0}.block .bh .x{grid-area:x;margin:0}
 .block .bh .x{margin-right:auto;cursor:pointer;color:var(--ink2);font-weight:400;font-size:12px}
 .block .legend-img{max-height:90px;margin:4px auto 6px}
 .leaflet-control-attribution{font-size:9px}
@@ -78,29 +114,58 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
 <body>
 <div id="map"></div>
 <div id="swipe"><div class="knob">⇔</div></div>
+<div id="lightbox"><img alt="legend"><div class="cap"></div></div>
+<div id="modal"><div class="box"><a class="close">✕</a><div class="content"></div></div></div>
+<template id="tplAbout">
+  <h3>אודות</h3>
+  <p>[טקסט האודות ייכתב כאן.]</p>
+  <h3 class="en">About</h3>
+  <p class="en">[About text to be written here.]</p>
+</template>
+<template id="tplHow">
+  <h3>איך משתמשים</h3>
+  <ul>
+    <li>סמנו גיליון ברשימה כדי להציג אותו על המפה; לחצו על שמו כדי לפתוח את המקרא ואת השכבות שלו.</li>
+    <li>כל צבע שצייר בגיליון הוא שכבה נפרדת — אפשר לכבות ולהדליק כל אחת, ולערום גיליונות זה על זה.</li>
+    <li>"כפי שצייר" שומר על הצבעים המקוריים; "צבע אחיד" מחדד אותם לקריאה.</li>
+    <li>לחיצה על המקרא הקטן מגדילה אותו. "הסריקה המלאה" מציגה את הגיליון כולו.</li>
+    <li>"השוואה" מציבה גיליון שני; גררו את המחלק על המפה.</li>
+    <li>מחוון "נייר ↔ מפה" קובע כמה מהמפה העכשווית נראה מתחת.</li>
+  </ul>
+  <h3 class="en">How to use</h3>
+  <ul class="en">
+    <li>Tick a sheet in the list to show it on the map; click its name to open its legend and layers.</li>
+    <li>Every colour he drew is a separate layer — switch each on or off, and stack sheets on top of one another.</li>
+    <li>"As drawn" keeps the original pigments; "flat colour" sharpens them for reading.</li>
+    <li>Click the small legend to enlarge it. "Full scan" shows the whole sheet.</li>
+    <li>"Compare" places a second sheet; drag the divider on the map.</li>
+    <li>The "paper ↔ map" slider sets how much of today's map shows through.</li>
+  </ul>
+</template>
 <aside id="panel">
   <h1>הרובע היהודי, 1967</h1>
   <p class="creator" id="creator"></p>
   <p class="sub">The planning sheets, laid on the city as it is today</p>
+  <div class="acts" style="margin:0 0 6px"><a id="aboutBtn">אודות · About</a><a id="howBtn">איך משתמשים · How to use</a></div>
 
   <h2>הגיליונות · Sheets</h2>
-  <div class="small" style="margin:-4px 0 6px">לחיצה מוסיפה גיליון לערימה, לחיצה נוספת מסירה · click to add a sheet to the stack, click again to remove</div>
+  <div class="small" style="margin:-4px 0 4px">סימון מציג גיליון על המפה; לחיצה על השם פותחת את המקרא והשכבות שלו · tick to show a sheet; click its name for its legend and layers</div>
+  <div class="acts" style="margin:0 0 6px"><a id="selAll">הציגו הכל · show all</a><a id="selNone">נקו · clear</a><span>·</span><a id="expAll">פתחו · expand</a><a id="colAll">סגרו · collapse</a></div>
   <div id="sheets"></div>
 
-  <h2>שכבות · Layers</h2>
-  <div id="stack"></div>
+  <h2>תצוגה · Display</h2>
   <div class="row"><label><input type="checkbox" id="basechk" checked><span class="sw ink"></span><span>קווי הבסיס (עט דק)</span><span class="en">base linework, once</span></label></div>
   <div class="ctl"><span class="small">מתוך · from</span><select id="basefrom"></select></div>
   <div class="ctl"><span class="small">שקיפות · Opacity</span></div>
   <input id="opacity" type="range" min="0" max="1" step="0.02" value="0.9">
   <div class="toggle" id="mode">
-    <button data-m="pen" class="on">כפי שצייר · As drawn</button>
-    <button data-m="flat">צבע אחיד · Flat colour</button>
+    <button data-m="pen">כפי שצייר · As drawn</button>
+    <button data-m="flat" class="on">צבע אחיד · Flat colour</button>
   </div>
 
   <h2>השוואה · Compare</h2>
   <div class="ctl"><select id="compare"><option value="">— ללא · none —</option></select></div>
-  <div class="small">גרור את המחלק על המפה · drag the divider on the map</div>
+  <div class="small">גררו את המחלק על המפה · drag the divider on the map</div>
 
   <h2>רקע · Background</h2>
   <div class="toggle" id="base">
@@ -116,7 +181,7 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
 </aside>
 <script>
 (async function(){
-  const M = await (await fetch('manifest.json')).json();
+  const M = await (await fetch('manifest.json',{cache:'no-cache'})).json();
   const bounds = L.latLngBounds(M.bounds);
   const map = L.map('map',{zoomControl:true, zoomSnap:0.25, maxZoom:20});
   window.atlas={map,M};
@@ -143,14 +208,14 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
   document.getElementById('ref').onchange=e=>e.target.checked?ref.addTo(map):map.removeLayer(ref);
 
   // ---------- state
-  const S = {active:[], shown:{}, cmp:null, opacity:0.9, mode:'pen', baseOn:true, baseFrom:null, layersA:{}, layersB:{}};
-  const flatCache = new Map();
+  const S = {active:[], shown:{}, openBlocks:{}, cmp:null, opacity:0.9, mode:'flat', baseOn:true, baseFrom:null, layersA:{}, layersB:{}};
+  const flatCache = new Map(); window.atlas.S=S;
   const sheetByNum=n=>M.sheets.find(s=>s.num===n);
   const classOf=(sheet,key)=>sheet.classes.find(c=>c.key===key);
 
   async function flatUrl(file,hex){
     const k=file+hex; if(flatCache.has(k)) return flatCache.get(k);
-    const img=new Image(); img.src=file; await img.decode();
+    const img=await new Promise((res,rej)=>{ const im=new Image(); im.onload=()=>res(im); im.onerror=()=>rej(new Error('cannot load '+file)); im.src=file; });
     const c=document.createElement('canvas'); c.width=img.width; c.height=img.height;
     const g=c.getContext('2d'); g.drawImage(img,0,0);
     const d=g.getImageData(0,0,c.width,c.height), p=d.data;
@@ -199,36 +264,64 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
   // "full scan" toggle on the map: shows the whole sheet (all stacked sheets) under the separated layers
   const ScanCtl=L.Control.extend({onAdd(){
     const d=L.DomUtil.create('div','leaflet-bar leaflet-control leaflet-control-scan');
-    const a=L.DomUtil.create('a','',d); a.href='#'; a.innerHTML='<span class="sw scan"></span>הסריקה המלאה · full scan'; a.title='הצג את הגיליון כולו · show the whole sheet';
+    const a=L.DomUtil.create('a','',d); a.href='#'; a.innerHTML='<span class="sw scan"></span>הסריקה המלאה · full scan'; a.title='הציגו את הגיליון כולו · show the whole sheet';
     L.DomEvent.on(a,'click',e=>{ L.DomEvent.stop(e); const on=!S.active.every(n=>S.shown[n].scan); for(const n of S.active) S.shown[n].scan=on; renderStack(); syncA(); });
     S.scanBtn=a; return d; }});
   new ScanCtl({position:'topright'}).addTo(map);
   // ---------- sheet list (multi-select)
   const list=document.getElementById('sheets');
   for(const g of ['survey','past','plan']){
-    const gd=document.createElement('div'); gd.className='group';
-    gd.innerHTML=`<div class="gname">${M.groups[g][0]} · <span style="direction:ltr">${M.groups[g][1]}</span></div>`;
+    const gd=document.createElement('details'); gd.className='group'; gd.dataset.g=g; gd.open=false;
+    gd.innerHTML=`<summary><span class="tri">◀</span><span class="gname">${M.groups[g][0]} · <span style="direction:ltr">${M.groups[g][1]}</span></span><span class="cnt" data-cnt="${g}"></span><span class="acts"><a data-gall="${g}">הכל</a><a data-gnone="${g}">נקו</a></span></summary>`;
     for(const s of M.sheets.filter(s=>s.group===g)){
-      const b=document.createElement('button'); b.className='sheet'; b.dataset.num=s.num;
-      b.innerHTML=`<span class="tick"></span>${s.he}<small>${s.en} · sheet ${s.num}</small>`;
-      b.onclick=()=>toggleSheet(s.num); gd.appendChild(b);
+      const d=document.createElement('details'); d.className='sheet'; d.dataset.num=s.num;
+      const mini=s.classes.map(c=>`<span style="background:${c.color}"></span>`).join('');
+      d.innerHTML=`<summary><span class="tick" title="הציגו על המפה · show on the map"></span><span class="he">${s.he}</span><span class="en">${s.en} · ${s.num}</span><span class="mini">${mini}</span><span class="tri">◀</span></summary><div class="body"></div>`;
+      d.querySelector('.tick').onclick=e=>{ e.preventDefault(); e.stopPropagation(); toggleSheet(s.num); };
+      d.ontoggle=()=>{ S.openBlocks[s.num]=d.open; };
+      gd.appendChild(d);
     }
+    gd.querySelector('[data-gall]').onclick=e=>{ e.preventDefault(); e.stopPropagation(); setSheets(M.sheets.filter(s=>s.group===g).map(s=>s.num),true); };
+    gd.querySelector('[data-gnone]').onclick=e=>{ e.preventDefault(); e.stopPropagation(); setSheets(M.sheets.filter(s=>s.group===g).map(s=>s.num),false); };
     list.appendChild(gd);
   }
+  async function setSheets(nums,on){
+    for(const num of nums){
+      const has=S.active.includes(num);
+      if(on&&!has){ S.active.push(num); if(!S.shown[num]) S.shown[num]=defaultShown(sheetByNum(num)); }
+      if(!on&&has) S.active=S.active.filter(n=>n!==num);
+    }
+    S.active.sort((a,b)=>sheetByNum(a).order-sheetByNum(b).order);
+    renderStack(); await syncA();
+  }
+  document.getElementById('selAll').onclick=()=>setSheets(M.sheets.map(s=>s.num),true);
+  document.getElementById('selNone').onclick=()=>setSheets(M.sheets.map(s=>s.num),false);
+  document.getElementById('expAll').onclick=()=>document.querySelectorAll('details.group,details.sheet').forEach(d=>d.open=true);
+  document.getElementById('colAll').onclick=()=>document.querySelectorAll('details.group,details.sheet').forEach(d=>d.open=false);
+  // about / how-to
+  const modal=document.getElementById('modal');
+  function openModal(tpl){ modal.querySelector('.content').innerHTML=document.getElementById(tpl).innerHTML; modal.classList.add('on'); }
+  document.getElementById('aboutBtn').onclick=()=>openModal('tplAbout'); document.getElementById('howBtn').onclick=()=>openModal('tplHow');
+  modal.querySelector('.close').onclick=()=>modal.classList.remove('on'); modal.onclick=e=>{ if(e.target===modal) modal.classList.remove('on'); };
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') modal.classList.remove('on'); });
+  // legend lightbox
+  const lb=document.getElementById('lightbox');
+  function showLegend(src,cap){ lb.querySelector('img').src=src; lb.querySelector('.cap').textContent=cap; lb.classList.add('on'); }
+  lb.onclick=()=>lb.classList.remove('on'); document.addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('on'); });
   const cmpSel=document.getElementById('compare');
   for(const s of M.sheets){ const o=document.createElement('option'); o.value=s.num; o.textContent=`${s.he} — ${s.en}`; cmpSel.appendChild(o); }
 
   function defaultShown(sheet){ const sh={scan:false}; for(const c of sheet.classes) sh[c.key]=true; return sh; }
 
   function renderStack(){
-    const box=document.getElementById('stack'); box.innerHTML='';
-    for(const num of S.active){
-      const sheet=sheetByNum(num), shown=S.shown[num];
-      const d=document.createElement('div'); d.className='block';
-      d.innerHTML=`<div class="bh"><span>${sheet.he}</span><span class="en">${sheet.en}</span><span class="x" data-num="${num}">הסר · remove</span></div>`;
-      if(sheet.legend_img){ const im=document.createElement('img'); im.className='legend-img'; im.src=sheet.legend_img; im.title='click to enlarge'; im.onclick=()=>im.classList.toggle('big'); d.appendChild(im); }
+    for(const d of document.querySelectorAll('details.sheet')){
+      const num=d.dataset.num, sheet=sheetByNum(num), body=d.querySelector('.body'); body.innerHTML='';
+      d.classList.toggle('active',S.active.includes(num));
+      if(!S.shown[num]) S.shown[num]=defaultShown(sheet);
+      const shown=S.shown[num];
+      if(sheet.legend_img){ const im=document.createElement('img'); im.className='legend-img'; im.src=sheet.legend_img; im.title='להגדלה · click to enlarge'; im.onclick=()=>showLegend(sheet.legend_img,`${sheet.he} · ${sheet.en}`); body.appendChild(im); }
       const ab=document.createElement('details'); ab.className='about';
-      const conf=sheet.confidence||''; 
+      const conf=sheet.confidence||'';
       ab.innerHTML=`<summary>על הגיליון · about this sheet <span class="conf ${conf}">reading: ${conf}</span></summary>
         <dl>
           <dt>מזהה</dt><dd style="direction:ltr;text-align:left">${sheet.identifier||''}</dd>
@@ -238,30 +331,29 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
           <dt>תקופה</dt><dd style="direction:ltr;text-align:left">${sheet.coverage_temporal||''}</dd>
           ${sheet.relation?`<dt>קשרים</dt><dd style="direction:ltr;text-align:left">${sheet.relation}</dd>`:''}
           <dt>מקור</dt><dd style="direction:ltr;text-align:left">${sheet.scan||''} (${(sheet.scan_size||[]).join('×')} px)</dd>
-          <dt>גאורפרנס</dt><dd style="direction:ltr;text-align:left"><a href="${sheet.georef||''}" target="_blank">IIIF georeference annotation</a></dd>
+          <dt>גאורפרנס</dt><dd style="direction:ltr;text-align:left">${dl('georef-'+num,'IIIF georeference annotation')}</dd>
         </dl>`;
-      d.appendChild(ab);
+      body.appendChild(ab);
       const rows=[{key:'scan',he:'הסריקה המלאה',en:'full scan',sw:'sw scan'}, ...sheet.classes.map(c=>({key:c.key,he:c.he,en:c.en,sw:'sw '+c.kind,color:c.color,quality:c.quality,notes:c.notes}))];
       for(const r of rows){
         const row=document.createElement('div'); row.className='row';
         row.innerHTML=`<label><input type="checkbox" ${shown[r.key]?'checked':''}><span class="${r.sw}" style="${r.color?'background:'+r.color:''}"></span><span>${r.he}</span><span class="en">${r.en}</span>${r.quality&&r.quality!=='good'?`<span class="qual" title="${r.notes||''}">${r.quality}</span>`:''}</label>`;
-        row.querySelector('input').onchange=e=>{ shown[r.key]=e.target.checked; syncA(); };
-        d.appendChild(row);
+        row.querySelector('input').onchange=e=>{ shown[r.key]=e.target.checked; if(!S.active.includes(num)) toggleSheet(num); else syncA(); };
+        body.appendChild(row);
       }
-      d.querySelector('.x').onclick=()=>toggleSheet(num);
-      box.appendChild(d);
     }
     const bf=document.getElementById('basefrom'); bf.innerHTML='';
     for(const num of S.active){ const o=document.createElement('option'); o.value=num; o.textContent=sheetByNum(num).he; bf.appendChild(o); }
     if(!S.active.includes(S.baseFrom)) S.baseFrom=S.active[0]||null;
     if(S.baseFrom) bf.value=S.baseFrom;
-    document.querySelectorAll('.sheet').forEach(b=>b.classList.toggle('active',S.active.includes(b.dataset.num)));
     if(S.scanBtn) S.scanBtn.classList.toggle('on',S.active.length>0&&S.active.every(n=>S.shown[n].scan));
+    for(const g of ['survey','past','plan']){ const tot=M.sheets.filter(s=>s.group===g).length, on=S.active.filter(n=>sheetByNum(n).group===g).length; document.querySelector(`[data-cnt="${g}"]`).textContent=`${on}/${tot}`; }
     note();
   }
   async function toggleSheet(num){
     if(S.active.includes(num)) S.active=S.active.filter(n=>n!==num);
     else { S.active.push(num); if(!S.shown[num]) S.shown[num]=defaultShown(sheetByNum(num)); }
+    S.active.sort((a,b)=>sheetByNum(a).order-sheetByNum(b).order);
     renderStack(); await syncA();
   }
   document.getElementById('basechk').onchange=e=>{ S.baseOn=e.target.checked; syncA(); };
@@ -277,11 +369,13 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
   cmpSel.onchange=async e=>{ S.cmp=e.target.value||null; await mountB(); swipe.style.display=S.cmp?'block':'none'; clip(); };
   function clip(){
     const A=map.getPane('sheetA'), B=map.getPane('sheetB');
-    if(!S.cmp){ A.style.clip=''; B.style.clip=''; return; }
+    if(!S.cmp){ A.style.clipPath=''; B.style.clipPath=''; return; }
+    // panes are positioned in layer space; clip-path insets are relative to the pane box, which sits at layer (0,0)
     const nw=map.containerPointToLayerPoint([0,0]), se=map.containerPointToLayerPoint(map.getSize());
     const x=nw.x+(se.x-nw.x)*ratio;
-    A.style.clip=`rect(${nw.y}px, ${x}px, ${se.y}px, ${nw.x}px)`;
-    B.style.clip=`rect(${nw.y}px, ${se.x}px, ${se.y}px, ${x}px)`;
+    const ins=(t,r,b,l)=>`polygon(${l}px ${t}px, ${r}px ${t}px, ${r}px ${b}px, ${l}px ${b}px)`;
+    A.style.clipPath=ins(nw.y,x,se.y,nw.x);
+    B.style.clipPath=ins(nw.y,se.x,se.y,x);
     swipe.style.left=(map.getSize().x*ratio)+'px';
   }
   map.on('move zoom resize',clip);
@@ -291,13 +385,15 @@ select{font:inherit;font-size:13px;padding:3px 6px;border:1px solid var(--line);
   knob.addEventListener('pointermove',e=>{ if(!dragging) return; const r=map.getContainer().getBoundingClientRect(); ratio=Math.min(.98,Math.max(.02,(e.clientX-r.left)/r.width)); clip(); });
 
   const C=M.collection||{};
+  const dl=(key,label)=>{ const d=(M.downloads||{})[key]; return d?`<a href="${d.path}" download="${d.download}" title="${d.download} · updated ${d.updated}" style="color:inherit">${label}</a>`:label; };
   document.getElementById('creator').innerHTML=`${C.creator||''} · <span style="direction:ltr;display:inline-block">${C.creator_en||''}</span>${C.creator_wikidata?` · <a href="https://www.wikidata.org/wiki/${C.creator_wikidata}" target="_blank" style="color:inherit">${C.creator_wikidata}</a>`:''}`;
   function note(){
     const n=document.getElementById('note');
-    n.innerHTML=`<div style="margin-bottom:8px">${C.rights||''}${C.license&&C.license!=='TBD'?` · ${C.license}`:''} · <a href="provenance.json" target="_blank" style="color:inherit">provenance</a> · <a href="catalogue/sheets.csv" target="_blank" style="color:inherit">catalogue</a></div>`+`כל צבע שסומן בגיליון הופרד לשכבה משלו; הצבעים הם הפיגמנטים כפי שנקראו מהשקופית. אפשר לערום גיליונות זה על זה; קווי הבסיס מצוירים פעם אחת בלבד.
+    n.innerHTML=`<div style="margin-bottom:6px">${C.rights||''}${C.license&&C.license!=='TBD'?` · ${C.license}`:''}</div>
+      <div style="margin-bottom:8px"><b>הורדות · Downloads</b> — ${dl('catalogue-sheets','catalogue: sheets (CSV)')} · ${dl('catalogue-classes','catalogue: legend classes (CSV)')} · ${dl('provenance','provenance (JSON)')} · ${dl('manifest','atlas manifest (JSON)')} · <a href="datapackage.json" download="${(M.downloads&&M.downloads['catalogue-sheets']?M.downloads['catalogue-sheets'].download.replace('catalogue-sheets','datapackage').replace('.csv','.json'):'datapackage.json')}" style="color:inherit">data package (JSON)</a><br><span class="small">שמות הקבצים נושאים את שם הפרויקט ואת תאריך העדכון האחרון · file names carry the project and the date last updated</span></div>`+`כל צבע שסומן בגיליון הופרד לשכבה משלו; הצבעים הם הפיגמנטים כפי שנקראו מהשקופית. אפשר לערום גיליונות זה על זה; קווי הבסיס מצוירים פעם אחת בלבד.
       <br><span style="direction:ltr;display:block;text-align:left;margin-top:6px">Each marker colour on a sheet is its own layer; swatches are the pigments as read from the slide. Sheets stack; the base linework is drawn once. “Flat colour” repaints a layer in one colour to make it readable; “as drawn” keeps his hand.</span>`;
   }
-  await toggleSheet(M.sheets[0].num);
+  await setSheets(M.sheets.map(s=>s.num),true);
 })();
 </script>
 </body>

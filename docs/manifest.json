@@ -9,7 +9,7 @@
   "rights": "© Estate of Ehud Netzer; digitised and curated by Yael Netzer",
   "license": "TBD",
   "curator": "Yael Netzer",
-  "generated": "2026-09-18"
+  "generated": "2026-09-19"
  },
  "bounds": [
   [
@@ -1102,5 +1102,102 @@
    ],
    "legend_img": "legends/0032.png"
   }
- ]
+ ],
+ "downloads": {
+  "catalogue-sheets": {
+   "path": "catalogue/sheets.csv",
+   "download": "jewish-quarter-1967_catalogue-sheets_2026-09-18.csv",
+   "updated": "2026-09-18"
+  },
+  "catalogue-classes": {
+   "path": "catalogue/classes.csv",
+   "download": "jewish-quarter-1967_catalogue-classes_2026-09-18.csv",
+   "updated": "2026-09-18"
+  },
+  "provenance": {
+   "path": "provenance.json",
+   "download": "jewish-quarter-1967_provenance_2026-09-19.json",
+   "updated": "2026-09-19"
+  },
+  "manifest": {
+   "path": "manifest.json",
+   "download": "jewish-quarter-1967_atlas-manifest_2026-09-19.json",
+   "updated": "2026-09-19"
+  },
+  "reference": {
+   "path": "reference.geojson",
+   "download": "jewish-quarter-1967_osm-reference_2026-09-18.geojson",
+   "updated": "2026-09-18"
+  },
+  "georef-0008": {
+   "path": "georef/0008.json",
+   "download": "jewish-quarter-1967_georef-0008_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0013": {
+   "path": "georef/0013.json",
+   "download": "jewish-quarter-1967_georef-0013_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0014": {
+   "path": "georef/0014.json",
+   "download": "jewish-quarter-1967_georef-0014_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0015": {
+   "path": "georef/0015.json",
+   "download": "jewish-quarter-1967_georef-0015_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0018": {
+   "path": "georef/0018.json",
+   "download": "jewish-quarter-1967_georef-0018_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0016": {
+   "path": "georef/0016.json",
+   "download": "jewish-quarter-1967_georef-0016_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0019": {
+   "path": "georef/0019.json",
+   "download": "jewish-quarter-1967_georef-0019_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0021": {
+   "path": "georef/0021.json",
+   "download": "jewish-quarter-1967_georef-0021_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0017": {
+   "path": "georef/0017.json",
+   "download": "jewish-quarter-1967_georef-0017_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0025": {
+   "path": "georef/0025.json",
+   "download": "jewish-quarter-1967_georef-0025_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0028": {
+   "path": "georef/0028.json",
+   "download": "jewish-quarter-1967_georef-0028_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0027": {
+   "path": "georef/0027.json",
+   "download": "jewish-quarter-1967_georef-0027_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0031": {
+   "path": "georef/0031.json",
+   "download": "jewish-quarter-1967_georef-0031_2026-09-18.json",
+   "updated": "2026-09-18"
+  },
+  "georef-0032": {
+   "path": "georef/0032.json",
+   "download": "jewish-quarter-1967_georef-0032_2026-09-18.json",
+   "updated": "2026-09-18"
+  }
+ }
 }
